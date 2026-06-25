@@ -9,173 +9,326 @@
 <body>
     <header>
         <nav>
+            <nav>
             <a href="../index.html"> (Introdução) </a>
             <a href="./simulacoes.html"> (Simulações e Diagramas) </a>
+            <a href="./componentes.html"> (Componentes) </a>
+            <a href="./tia_portal.html">(TIA Portal V20)</a>
             <a href="./conclusao.html"> (Conclusão) </a>
+        </nav>
         </nav>
     </header>
     <main>
         <h1 class="h1">Simulações e Diagramas</h1>
         <br><br>
-        <h2>Tutorial - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <div class="fundo_geral">
+            <h2>Tutorial - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video//tutorial.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Tutorial - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/tutorial_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Após iniciar simulação o LED Sinalizador Verde (H1 --> contato de entrada = X1, contato de saída = X2) acende de imediato, pois não há nada que impeça a energia de chegar e circular por ele, assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua --> fio Vermelho), passando pelo LED Sinalizador Verde e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum --> fio Preto), só sendo desativado após encerrar a simulação</p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Tutorial - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 01 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 1 - Acionando um LED com Botão" - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_01.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 1 - Acionando um LED com Botão" - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_01_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA --> B1 --> contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pelo LED Sinalizador Verde (H1 --> contato de entrada = X1, contato de saída = X2) que, ao ser enrgizado acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua --> fio Vermelho), passando pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pelo LED Sinalizador Verde (H1) e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum --> fio Preto).</p>
+            <br>
+            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito e impedindo a passagem de energia, que por consequência desliga o LED Sinalizador Verde (H1).</p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 01 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 02 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 2 - Acionando um LED com Botão e Disjuntor" - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_02.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 2 - Acionando um LED com Botão e Disjuntor" - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_02_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 --> contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA --> B1 --> contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pelo LED Sinalizador Verde (H1 --> contato de entrada = X1, contato de saída = X2) que, ao ser enrgizado acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua --> fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor ativado, pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pelo LED Sinalizador Verde (H1) e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum --> fio Preto).</p>
+            <br>
+            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito (que se segue a partir dele) e impedindo a passagem de energia, que por consequência desliga o LED Sinalizador Verde; após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 02 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 03 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 3 - Acionando dois LEDs (Botão NA e NF)" - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_03.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 3 - Acionando dois LEDs (Botão NA e NF)" - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_03_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 03 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 04 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 4 - Acionando um LED (Contator)" - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_04.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 4 - Acionando um LED (Contator)" - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_04_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 04 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 05 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Prática 05 - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_05.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Prática 05 - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_05_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 05 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 06 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Prática 06 - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_06.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Prática 06 - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_06_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 06 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 07 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Prática 07 - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_07.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Prática 07 - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_07_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 07 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 08 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Prática 08 - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_08.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Prática 08 - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_08_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 08 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 09 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Prática 09 - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_09.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Prática 09 - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_09_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 09 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 10 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Prática 10 - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_10.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Prática 10 - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_10_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 10 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 11 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Prática 11 - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_11.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Prática 11 - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_11_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 11 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
-        <h2>Prática 12 - Laboratório Digital ( Sesi Senai )</h2>
-        <br>
-        <div>
-            <video src="" type="video/mp4" controls width="360px"></video>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Prática 12 - Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_12.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Prática 12 - Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_12_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
         </div>
-        <br><br><br>
-        <h2>Prática 12 - Diagrama ( CAD SIMU )</h2>
-        <br>
-        <video src="" type="video/mp4" controls width="360px"></video>
         <br><br>
         <hr>
-        <br>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Exercício Prático - Laboratório Elétrica ( Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/atividade_pratica_prof_lab_eletrica.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Exercício Prático - Laboratório Elétrica ( Senai - Diagrama utilizado para a montagem e funcionamento (Presente no Vídeo) )</h2>
+            <br>
+            <div>
+                <img src="../img/diagrama_atividade_pratica_prof_utilizada_no_lab_eletrica.jpg" width="360px">
+            </div>
+            <br><br>
+            <h2>Exercício Prático - Laboratório Elétrica ( Senai - CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/atividade_pratica_prof_lab_eletrica_cad_simu.mp4" type="video/mp4" controls width="360px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p></p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
     </main>
     <footer>
         by Arthur Furtado Machado &copy; &trade;
+        <br><br><br>
     </footer>
 </body>
 </html>
