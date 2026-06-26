@@ -1,17 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* 1. Crucial para evitar que paddings estoure a tela */
 }
 
-body{
+body {
     background-color: rgb(63, 146, 167);
     color: white;
     text-align: center;
     font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-nav{
+nav {
     background-color: rgb(19, 113, 136);
     padding: 20px; /* Ajustado para caber melhor em telas menores */
     border-radius: 8px;
@@ -21,78 +22,71 @@ nav{
     display: flex;
     justify-content: center;
     gap: 15px;              /* Controla o espaçamento sem precisar de margin fixa nos links */
+
+    /* 3. Permite que os botões desçam para a próxima linha em telas pequenas */
+    flex-wrap: wrap;
 }
 
-nav a{
+nav a {
     padding: 16px 16px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     background-color: rgb(50, 162, 190);
     padding: 7px 7px;
     border-radius: 10px;
     border: rgb(20, 51, 73) 4px solid;
+    
+    /* 4. A transição deve ficar aqui para suavizar a ida e a volta */
+    transition: ease;
+    transition-duration: 0.65s;
 }
 
-a:hover{
-    transition: ease;
-    transition-duration: 0.75s;
+a:hover, a:active{
     background-color: rgb(50, 162, 190);
-    padding: 8px 8px;
     border-radius: 10px;
     border: rgb(20, 51, 73) 4px solid;
+
+    transform: scale(0.85);
 }
 
-a:active{
-    transition: ease;
-    transition-duration: 0.75s;
-    background-color: rgb(50, 162, 190);
-    padding: 8px 8px;
-    border-radius: 10px;
-    border: rgb(20, 51, 73) 4px solid;
-}
-
-main{
+main {
     margin-top: 35px;
 }
 
-.fundo_geral{
+.fundo_geral {
     background-color: rgb(33, 74, 155);
     border-radius: 10px;
     border: rgb(22, 55, 80) 4px solid;
     padding: 10px 10px;
-    margin: 20px 80px;
+
+    /* 5. Trocado de 80px para 5% para ser responsivo */
+    margin: 20px 5%;
 }
 
-.negrito{
-    font-weight: bold;
-}
-
-.h1{
+.h1 {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-h2{
+h2 {
     background-color: rgb(98, 192, 215);
     padding: 16px 16px;
     border-radius: 4px;
     border: rgb(82, 163, 221) 3px solid;
 }
 
-.negrito{
+.negrito {
     font-weight: bold;
     font-size: 1.3rem;
 }
 
-img{
+img, video {
     border-radius: 10px;
     border: black 3px solid;
-}
 
-video{
-    border-radius: 10px;
-    border: black 3px solid;
+    /* 5. Evita que imagens e vídeos estourem a tela do celular */
+    max-width: 100%;
 }
