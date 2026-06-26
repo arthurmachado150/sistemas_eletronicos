@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* 1. Crucial para evitar que paddings estoure a tela */
 }
 
 body{
@@ -12,23 +13,32 @@ body{
 
 nav{
     background-color: rgb(19, 113, 136);
-    padding: 18px 18px;
-    border: rgb(29, 91, 135) 4px solid;
+    padding: 20px; /* Ajustado para caber melhor em telas menores */
+    border-radius: 8px;
+    border: rgb(20, 51, 73) 4px solid;
+
+    /* 2. Responsividade automática dos botões do menu */
+    display: flex;
+    justify-content: center;
+    gap: 15px;              /* Controla o espaçamento sem precisar de margin fixa nos links */
 }
 
 nav a{
-    margin-right: 8px;
     padding: 16px 16px;
 }
 
 a{
     text-decoration: none;
     color: white;
+    background-color: rgb(50, 162, 190);
+    padding: 7px 7px;
+    border-radius: 10px;
+    border: rgb(20, 51, 73) 4px solid;
 }
 
 a:hover{
     transition: ease;
-    transition-duration: 1.0s;
+    transition-duration: 0.75s;
     background-color: rgb(50, 162, 190);
     padding: 8px 8px;
     border-radius: 10px;
@@ -37,7 +47,7 @@ a:hover{
 
 a:active{
     transition: ease;
-    transition-duration: 1.0s;
+    transition-duration: 0.75s;
     background-color: rgb(50, 162, 190);
     padding: 8px 8px;
     border-radius: 10px;
@@ -53,6 +63,7 @@ main{
     border-radius: 10px;
     border: rgb(22, 55, 80) 4px solid;
     padding: 10px 10px;
+    margin: 20px 80px;
 }
 
 .negrito{
