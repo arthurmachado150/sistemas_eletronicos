@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sistema de Medição de Grandezas Físicas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"> (Introdução) </a>
+            <a href="./simulacoes.html"> (Simulações e Diagramas) </a>
+            <a href="./componentes.html"> (Componentes) </a>
+            <a href="./tia_portal.html">(TIA Portal V20)</a>
+            <a href="./conclusao.html"> (Conclusão) </a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="h1">Simulações e Diagramas</h1>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Tutorial" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/tutorial.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Tutorial" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/tutorial_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Após iniciar simulação o LED Sinalizador Verde (H1 ➔ contato de entrada = X1, contato de saída = X2) acende de imediato, pois não há nada que impeça a energia de chegar e circular por ele, assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo LED Sinalizador Verde e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto), só sendo desativado após encerrar a simulação.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 1 - Acionando um LED com Botão" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_01.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 1 - Acionando um LED com Botão" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_01_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pelo LED Sinalizador Verde (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser energizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pelo LED Sinalizador Verde (H1) e chegando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto).</p>
+            <br>
+            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito e impedindo a passagem de energia, que por consequência desliga o LED Sinalizador Verde (H1).</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 2 - Acionando um LED com Botão e Disjuntor" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_02.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 2 - Acionando um LED com Botão e Disjuntor" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_02_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pelo LED Sinalizador Verde (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser energizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (ativado), pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pelo LED Sinalizador Verde (H1) e chegando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto).</p>
+            <br>
+            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito (que se segue a partir dele) e impedindo a passagem de energia, que por consequência desliga o LED Sinalizador Verde; após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 3 - Acionando dois LEDs (Botão NA e NF)" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_03.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 3 - Acionando dois LEDs (Botão NA e NF)" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_03_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão 1 do Tipo Push que possui seus contatos tanto em Normalmente Aberto quanto em Normalmente Fechado (conectados por mola ) (Push Button NA e NF ➔ B1 - NA: contato de entrada = 13, contato de saída = 14 | ➔ B1 - NF: contato de entrada = 21, contato de saída = 22 ) o B1 (NA) passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) e o B1 (NF) passa de Normalmente Fechado (NF) para Normalmente Aberto (NA) enquanto pressionado, assim permitindo a passagem de energia pelo Botão 1 do Tipo Push (B1 - NA) e pelo LED Sinalizador Verde 2 (H2 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser energizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento; e ao mesmo tempo o Botão 1 do Tipo Push (B1 - NF) se abre, impedindo a passagem de energia por ele e pelo LED Sinalizador Verde 1 (H1 ➔ contato de entrada = X1, contato de saída = X2); assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão 1 do Tipo Push (B1 - NA) e apenas pela entrada do Botão 1 do Tipo Push (B1 - NF) enquanto pressionado, pelo LED Sinalizador Verde 2 (H2) e chegando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto).</p>
+            <br>
+            <p>Ao deixar de pressionar o Botão 1 do Tipo Push, o B1 (NA) passa de "NF" para "NA" e o B1 (NF) passa de "NA" para "NF" por meio da ação de sua mola interna, assim abrindo o circuito que se segue a partir de B1 (NA) impedindo a passagem de energia e fechando o circuito que segue a partir do B1 (NF) liberando a passagem de energia, que por consequência desliga o LED Sinalizador Verde 2 (H2) e liga o LED Sinalizador Verde 1 (H1) ao qual a saída também está conectada ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 4 - Acionando um LED (Contator)" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_04.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 4 - Acionando um LED (Contator)" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_04_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pela Bobina do Contator 1 (K1 ➔ contato de entrada = A1, contato de saída = A2) que é ativada, criando um campo magnético que magnetiza o contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 13, contato de saída = 14) do Contator 1 (K1), fechando-o e permitindo a passagem de energia pelo LED Sinalizador Verde (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser energizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento, e por todo o circuito; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pela Bobina do Contator 1 (K1) que é ativada, criando um campo magnético que fecha o contato Normalmente Aberto do Contator 1 (K1 ➔ NA), o qual a entrada também está conectada à saída do contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1), permitindo assim a passagem de energia pelo LED Sinalizador Verde (H1) e chegando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto) que também está conectado à saída da Bobina do Contator 1 (K1 ➔ A2).</p>
+            <br>
+            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito (que se segue a partir dele), impedindo a passagem de energia pela Bobina do Contator 1 (K1) que é desenergizada, fazendo com que o campo magnético seja desfeito, o contato Normalmente Aberto do Contator 1 (K1 ➔ NA) seja desmagnetizado e aberto, que por consequência desliga o LED Sinalizador Verde (H1); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 5 - Acionando dois LEDs (Contator)" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_05.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 5 - Acionando dois LEDs (Contator)" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_05_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pela Bobina do Contator 1 (K1 ➔ contato de entrada = A1, contato de saída = A2) que é ativada, criando um campo magnético que magnetiza o contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 13, contato de saída = 14) e o contato Normalmente Fechado (NF ➔ K1 ➔ contato de entrada = 21, contato de saída = 22) do Contator 1 (K1) conectados por uma mola interna, fechando o contato NA (K1) e abrindo o contato NF (K1), assim permitindo a passagem de energia pelo contato NA (K1) e pelo LED Sinalizador Verde 2 (H2 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser energizado, acende pois não há nada que impeça a energia de chegar pelo contato NA (K1) e passar pelo LED Sinalizador Verde 2 (H2) naquele momento; e impedindo a passagem de energia pelo contato NF (K1) e pelo LED Sinalizador Verde 1 (H1 ➔ contato de entrada = X1, contato de saída = X2), desligando-o; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pela Bobina do Contator 1 (K1) que é ativada, criando um campo magnético que fecha o contato Normalmente Aberto do Contator 1 (K1 ➔ NA) e abre o contato Normalmente Fechado do Contator 1 (K1 ➔ NF), os quais as entradas também estão conectadas à saída do contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1), permitindo assim a passagem de energia pelo LED Sinalizador Verde 2 (H2) e impedindo a passagem de energia pelo LED Sinalizador Verde 1 (H1), e ambas as saídas dos LEDs chegando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto) que também está conectado à saída da Bobina do Contator 1 (K1 ➔ A2).</p>
+            <br>
+            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito (que se segue a partir dele), impedindo a passagem de energia pela Bobina do Contator 1 (K1) que é desenergizada, fazendo com que o campo magnético seja desfeito, o contato Normalmente Aberto do Contator 1 (K1 ➔ NA) seja desmagnetizado e aberto, que por consequência desliga o LED Sinalizador Verde 2 (H2); e o contato Normalmente Fechado do Contator 1 (K1 ➔ NF) seja desmagnetizado e fechado, que por consequência liga o LED Sinalizador Verde 1 (H1); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 6 - Contato de selo" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_06.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 6 - Contato de selo" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_06_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), a energia liberada vai do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passa pelo Disjuntor Motor (D1 ➔ ativado), e pelo Botão do Tipo Push Normalmente Fechado 1 (Push Button NF ➔ B0 ➔ contato de entrada = 11, contato de saída = 12), chegando à entrada do Botão do Tipo Push Normalmente Aberto 2 (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) que passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pela Bobina do Contator 1 (K1 ➔ contato de entrada = A1, contato de saída = A2) que é ativada, criando um campo magnético que magnetiza o contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 13, contato de saída = 14) do Contator 1 (K1), que foi colocado em paralelo ao Botão do Tipo Push Normalmente Aberto 2 (Push Button NA ➔ B1), fechando-o, fazendo assim um Contato de Selo onde mesmo após deixar de pressionar o Botão do Tipo Push 2 NA (B1 ➔ NF para repouso - NA, por meio da ação de sua mola interna), a Bobina do Contator 1 (K1) se mantém ativa recebendo energia do contato Normalmente Aberto (NA ➔ K1 ➔ 13-14), que ela mesma (Bobina ➔ K1) fechou após criar seu campo magnético; após pressionar Botão do Tipo Push 2 (B1 ➔ NA), e ocorrer todo o processo que falei, além da Bobina do Contator 1 (K1) fechar o Contato de Selo, ela também fechou o contato Normalmente Aberto (NA ➔ K1 ➔ 53-54), permitindo a passagem de energia pelo LED Sinalizador Verde 1 (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser energizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento, e por todo o circuito (exceto o Botão do Tipo Push 2 ➔ B1 ➔ NA, quando deixado de ser pressionado e retornar a seu estado de repouso por meio de sua mola interna); assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão do Tipo Push 1 (NF ➔ B0 ➔ 11-12), pelo Botão do Tipo Push 2 (NA ➔ B1 ➔ 13-14) enquanto pressionado, pela Bobina do Contator 1 (K1) que é ativada, criando um campo magnético que fecha o contato Normalmente Aberto do Contator 1 (K1 ➔ NA ➔ 13-14) que está em paralelo com o Botão do Tipo Push 2 (NA ➔ B1) fazendo o Contato de Selo, e fecha o contato Normalmente Aberto do Contator 1 (NA ➔ K1 ➔ 53-54), o qual a entrada também está conectada à saída do Botão do Tipo Push 1 (NF ➔ B0 ➔ 11-12), permitindo assim a passagem de energia pelo LED Sinalizador Verde 1 (H1) e chegando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto) que também está conectado à saída da Bobina do Contator 1 (K1 ➔ A2).</p>
+            <br>
+            <p>Ao pressionar o Botão do Tipo Push 1 (NF ➔ B0 ➔ 11-12), ele passa de NF para NA, assim abrindo o circuito (que se segue a partir dele), impedindo a passagem de energia pelo Botão do Tipo Push 2 (NA ➔ B1), pela Bobina do Contator 1 (K1) que é desenergizada, fazendo com que o campo magnético seja desfeito, o contato Normalmente Aberto do Contator 1 (K1 ➔ NA ➔ 13-14) e o contato Normalmente Aberto do Contator 1 (NA ➔ K1 ➔ 53-54) sejam desmagnetizados e abertos, que por consequência desliga o LED Sinalizador Verde (H1); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 7 - Comando de Reversão" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_07.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 7 - Comando de Reversão" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_07_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), a energia liberada vai do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passa pelo Disjuntor Motor (D1 ➔ ativado), e pelo Botão do Tipo Push Normalmente Fechado 0 (Push Button NF ➔ B0 ➔ contato de entrada = 11, contato de saída = 12), chegando à entrada do Botão do Tipo Push Normalmente Aberto 1 (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) que passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele, passando logo em seguida pelo contato Normalmente Fechado do Botão do Tipo Push 2 (NF ➔ B2 ➔ contato de entrada = 11, contato de saída = 12) e pelo contato Normalmente Fechado do Contator 2 (NF ➔ K2 ➔ contato de entrada = 21, contato de saída = 22), chegando à entrada da Bobina do Contator 1 (K1 ➔ contato de entrada = A1, contato de saída = A2) que é ativada, criando um campo magnético que magnetiza o contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 13, contato de saída = 14) do Contator 1 (K1), que foi colocado em paralelo ao Botão do Tipo Push Normalmente Aberto 1 (Push Button NA ➔ B1), fechando-o, fazendo assim um Contato de Selo onde mesmo após deixar de pressionar o Botão do Tipo Push 1 NA (B1 ➔ NF para repouso - NA, por meio da ação de sua mola interna), a Bobina do Contator 1 (K1) se mantém ativa recebendo energia do contato Normalmente Aberto (NA ➔ K1 ➔ 13-14), que ela mesma (Bobina ➔ K1) fechou após criar seu campo magnético, abrindo simultaneamente o seu próprio contato Normalmente Fechado (NF ➔ K1 ➔ 21-22) para realizar o intertravamento; após pressionar o Botão do Tipo Push 1 (B1 ➔ NA), e ocorrer todo o processo que falei, a energia também chega ao LED Sinalizador Verde 1 (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser energizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento, e por todo o circuito (exceto o Botão do Tipo Push 1 ➔ B1 ➔ NA, quando deixado de ser pressionado e retornar a seu estado de repouso por meio de sua mola interna); assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão do Tipo Push 0 (NF ➔ B0 ➔ 11-12), pelo Botão do Tipo Push 1 (NA ➔ B1 ➔ 13-14) enquanto pressionado, pelo Botão do Tipo Push 2 (NF ➔ B2 ➔ 11-12), pelo contato de intertravamento (NF ➔ K2 ➔ 21-22), chegando à Bobina do Contator 1 (K1) e ao LED Sinalizador Verde 1 (H1) e chegando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto) que também está conectado à saída da Bobina do Contator 1 (K1 ➔ A2); de forma análoga e reversa, ao pressionar o Botão do Tipo Push 2 (NA ➔ B2 ➔ 13-14), a sua ação mecânica abre primeiro o seu contato Normalmente Fechado (NF ➔ B2 ➔ 11-12), cortando a energia e desativando a Bobina do Contator 1 (K1), desfazendo o seu selo e intertravamento, enquanto permite a passagem de energia pelo seu contato Normalmente Aberto (NA ➔ B2 ➔ 13-14), pelo Botão do Tipo Push 1 (NF ➔ B1 ➔ 11-12) e pelo contato (NF ➔ K1 ➔ 21-22), ativando a Bobina do Contator 2 (K2 ➔ A1-A2) que cria seu próprio campo magnético para fechar seu Contato de Selo (NA ➔ K2 ➔ 13-14), abrir seu intertravamento (NF ➔ K2 ➔ 21-22) e acender o LED Sinalizador Verde 2 (H2 ➔ X1-X2).</p>
+            <br>
+            <p>Ao pressionar o Botão do Tipo Push 0 (NF ➔ B0 ➔ 11-12), ele passa de NF para NA, assim abrindo o circuito (que se segue a partir dele), impedindo a passagem de energia para as duas ramificações, pela Bobina do Contator 1 (K1) ou Bobina do Contator 2 (K2) que são desenergizadas, fazendo com que o campo magnético seja desfeito, os contatos Normalmente Abertos de selo (K1 ➔ NA ➔ 13-14 e K2 ➔ NA ➔ 13-14) e os contatos Normalmente Fechados de intertravamento (K1 ➔ NF ➔ 21-22 e K2 ➔ NF ➔ 21-22) sejam desmagnetizados e retornem ao repouso, que por consequência desliga o LED Sinalizador Verde 1 (H1) ou LED Sinalizador Verde 2 (H2); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 8 - Acionamento Temporizado" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_08.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 8 - Acionamento Temporizado" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_08_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação e armar o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), a energia do Terminal Positivo "+" (24Vdc ➔ fio Vermelho) passa pelo botão Desliga (Botão Push NF ➔ B0 ➔ 11-12). Ao pressionar o Botão Liga (Botão Push NA ➔ B1 ➔ 13-14), a energia atinge simultaneamente a Bobina do Contator 1 (K1 ➔ A1-A2) e a Bobina do Relé Temporizador (T1 ➔ A1-A2). A Bobina K1 é ativada, fechando seu Contato de Selo (K1 ➔ NA ➔ 13-14) para manter ambas as bobinas (K1 e T1) energizadas mesmo após soltar o botão B1. Nesse momento, o Relé Temporizador (T1) inicia sua contagem de tempo pré-estabelecida (On-Delay). O LED Sinalizador Verde (H1 ➔ X1-X2), conectado à saída do contato temporizado, permanece apagado pois o fluxo está interrompido.</p>
+            <br>
+            <p>Após o tempo programado na Bobina do Relé Temporizador (T1) se esgotar, o seu contato Normalmente Aberto temporizado (T1 ➔ NA ➔ 67-68) se fecha automaticamente, permitindo que a energia passe e acenda o LED Sinalizador Verde (H1). O sistema permanece neste estado até que o Botão Desliga (B0 ➔ NF ➔ 11-12) seja pressionado, passando para NA e cortando a energia de todo o circuito de comando, desenergizando as bobinas K1 e T1, desfazendo o selo, zerando a contagem de tempo do relé e desligando o LED. A energia retorna integralmente ao Terminal Negativo "-" (0Vdc ➔ fio Preto).</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 9 - Partida Direta - Circuito de Comando" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_09.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 9 - Partida Direta - Circuito de Comando" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_09_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), a energia liberada vai do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passa pelo Disjuntor Motor (D1 ➔ ativado), passa pelo contato Normalmente Fechado do Relé Térmico (F1 ➔ contato de entrada = 95, contato de saída = 96) que atua como proteção do circuito, e chega ao Botão do Tipo Push Normalmente Fechado 0 (Push Button NF ➔ B0 ➔ contato de entrada = 11, contato de saída = 12), chegando à entrada do Botão do Tipo Push Normalmente Aberto 1 (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) que passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pela Bobina do Contator 1 (K1 ➔ contato de entrada = A1, contato de saída = A2) que é ativada, criando um campo magnético que magnetiza o contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 13, contato de saída = 14) do Contator 1 (K1), que foi colocado em paralelo ao Botão do Tipo Push Normalmente Aberto 1 (Push Button NA ➔ B1), fechando-o, fazendo assim o Contato de Selo onde mesmo após deixar de pressionar o Botão do Tipo Push 1 NA (B1 ➔ NF para repouso - NA, por meio da ação de sua mola interna), a Bobina do Contator 1 (K1) se mantém ativa recebendo energia do contato Normalmente Aberto (NA ➔ K1 ➔ 13-14), que ela mesma fechou; além disso, a Bobina do Contator 1 (K1) também fecha outro contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 43, contato de saída = 44) permitindo a passagem de energia pelo LED Sinalizador Verde 1 (H1 ➔ contato de entrada = X1, contato de saída = X2) indicando que o motor está ligado. A energia passa por todos esses componentes e chega ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto). Caso ocorra uma sobrecarga, o Relé Térmico (F1) abre seu contato (95-96) cortando a energia da Bobina K1 e fecha seu contato Normalmente Aberto (NA ➔ F1 ➔ 97-98), acendendo um LED Sinalizador Vermelho (H2 ➔ X1-X2) para indicar falha.</p>
+            <br>
+            <p>Ao pressionar o Botão do Tipo Push 0 (NF ➔ B0 ➔ 11-12), ele passa de NF para NA, assim abrindo o circuito de comando, impedindo a passagem de energia pela Bobina do Contator 1 (K1) que é desenergizada, fazendo com que o campo magnético seja desfeito, o Contato de Selo (K1 ➔ NA ➔ 13-14) e o contato do LED (K1 ➔ NA ➔ 43-44) sejam desmagnetizados e abertos, desligando o circuito principal e o LED Sinalizador Verde (H1); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 10 - Partida Direta - Circuito de Potência" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_10.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 10 - Partida Direta - Circuito de Potência" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_10_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Logo após iniciar a simulação, e acionar o comando (descrito na Prática 9), a energia da rede elétrica trifásica, proveniente dos Terminais de Conexão de Fase (L1, L2 e L3 ➔ fios de potência), desce pelo circuito passando primeiro pelo Disjuntor Motor Termomagnético Tripolar (Q1 ➔ contatos de entrada = 1, 3 e 5; contatos de saída = 2, 4 e 6) que, quando armado manualmente, permite a passagem das três fases de energia simultaneamente para proteger contra curtos-circuitos. A energia chega então aos contatos principais de potência do Contator 1 (K1 ➔ contatos de entrada = 1, 3 e 5; contatos de saída = 2, 4 e 6), que funcionam como interruptores controlados pela Bobina (A1-A2) do circuito de comando; quando a Bobina K1 é ativada no comando, esses contatos principais se fecham de Normalmente Abertos (NA) para Normalmente Fechados (NF), permitindo que a corrente elétrica trifásica atravesse o contator e chegue aos contatos principais do Relé Térmico (F1 ➔ contatos de entrada = 1, 3 e 5; contatos de saída = 2, 4 e 6), que monitora a corrente para proteger o motor contra sobrecargas prolongadas. Por fim, a energia sai do Relé Térmico (F1) e entra nos terminais do Motor Elétrico Trifásico (M1 ➔ contatos U1, V1 e W1), que, ao receber as três fases energizadas de forma correta e sem interrupções, cria um campo magnético rotativo em seu estator, iniciando a sua rotação mecânica (partida direta do motor).</p>
+            <br>
+            <p>Ao desligar o circuito pelo circuito de comando (pressionando o botão B0 ou em caso de falha no Relé Térmico F1), a Bobina do Contator 1 (K1) perde a energia, fazendo com que a mola interna do contator abra os contatos principais de potência (K1 ➔ 1, 3, 5 e 2, 4, 6), interrompendo instantaneamente o fluxo das três fases para o motor. Sem a energia trifásica chegando aos terminais (U1, V1 e W1), o campo magnético rotativo deixa de existir e o Motor Elétrico Trifásico (M1) desacelera até parar completamente por inércia; após isso, caso deseje isolar totalmente a máquina para manutenção, desarma-se o Disjuntor Motor Tripolar (Q1).</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 11 - Partida Direta com Reversão - Circuito de Comando" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_11.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 11 - Partida Direta com Reversão - Circuito de Comando" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_11_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Para realizar a reversão do motor, utilizamos duas bobinas de contatores, K1 e K2. Após iniciar a simulação e armar o Disjuntor Motor (D1), a energia passa pelo contato Normalmente Fechado do Relé Térmico (F1 ➔ 95-96) e pelo Botão de Desliga (B0 ➔ NF ➔ 11-12). Ao pressionar o Botão de Liga 1 (B1 ➔ NA ➔ 13-14), destinado a girar o motor num sentido, a energia cruza o contato Normalmente Fechado do Contator 2 (K2 ➔ NF ➔ 21-22), que age como Intertravamento Elétrico, e alcança a Bobina do Contator 1 (K1 ➔ A1-A2). A Bobina K1 é ativada, fecha seu Contato de Selo (K1 ➔ NA ➔ 13-14), além de acender o LED Sinalizador Verde 1 (H1). Ao mesmo tempo, ao ser ativado, o Contator 1 abre o seu contato Normalmente Fechado (K1 ➔ NF ➔ 21-22), bloqueando completamente a passagem de energia para a Bobina K2.</p>
+            <br>
+            <p>Se, acidentalmente, pressionarmos o Botão de Liga 2 (B2 ➔ NA ➔ 13-14), a energia será impedida de chegar a K2 porque o contato NF de K1 está aberto, evitando um curto-circuito. Para reverter a rotação, obrigatoriamente pressiona-se o Botão de Desliga (B0 ➔ 11-12), desenergizando K1 e retornando todos os contatos ao repouso. Somente então, pressionando o Botão de Liga 2 (B2 ➔ NA ➔ 13-14), a energia passa pelo agora fechado intertravamento (K1 ➔ NF ➔ 21-22) e liga a Bobina do Contator 2 (K2 ➔ A1-A2), que aciona seu próprio Contato de Selo (K2 ➔ NA ➔ 13-14), liga o LED Sinalizador Verde 2 (H2) e abre seu contato de intertravamento (K2 ➔ NF ➔ 21-22) bloqueando K1. O fechamento do circuito no Terminal Negativo "-" é igual para todos os retornos das bobinas e LEDs.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>"Prática 12 - Partida Direta com Reversão - Circuito de Potência" ➔ Laboratório Digital ( Sesi Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_12.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>"Prática 12 - Partida Direta com Reversão - Circuito de Potência" ➔ Diagrama ( CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/exercicio_12_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: No circuito de potência da reversão, temos a energia elétrica trifásica (Fases L1, L2, L3) descendo através do Disjuntor Motor Tripolar (Q1). O circuito se divide, alimentando em paralelo os contatos principais de potência do Contator 1 (K1 ➔ 1, 3, 5) e do Contator 2 (K2 ➔ 1, 3, 5) com a mesma sequência de fases originais. Quando o circuito de comando ativa a Bobina K1, seus contatos principais fecham (K1 ➔ 1, 3, 5 para 2, 4, 6), conduzindo as três fases sem alteração de ordem (L1-L2-L3) através do Relé Térmico (F1) até os bornes do Motor Trifásico (M1 ➔ U1, V1, W1), criando o campo magnético rotativo que faz o eixo girar no Sentido Horário.</p>
+            <br>
+            <p>Quando K1 é desativado e o circuito de comando ativa a Bobina K2, os contatos principais de K2 fecham (K2 ➔ 1, 3, 5 para 2, 4, 6). No entanto, a fiação de saída do K2 foi conectada propositalmente cruzada com as entradas do Relé Térmico (F1) / Motor (M1). A fase L1 (saída do pino 2 de K2) é conectada ao pino que recebe a fase L3 (W1); a fase L2 permanece no meio (V1); e a fase L3 (saída do pino 6 de K2) é conectada ao pino que recebe a fase L1 (U1). Ao inverter duas fases (L1 e L3), o campo magnético rotativo no estator inverte seu fluxo, fazendo o Motor Trifásico (M1) girar no Sentido Anti-Horário. O intertravamento elétrico feito no comando (Prática 11) impede que K1 e K2 fechem juntos; caso fechassem simultaneamente, as fases L1 e L3 colidiriam, provocando um curto-circuito bifásico de altíssima gravidade.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="fundo_geral">
+            <h2>Exercício Prático - Laboratório Elétrica ( Senai )</h2>
+            <br>
+            <div>
+                <video src="../video/atividade_pratica_prof_lab_eletrica.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Exercício Prático - Laboratório Elétrica ( Senai - Diagrama utilizado para a montagem e funcionamento (Presente no Vídeo) )</h2>
+            <br>
+            <div>
+                <img src="../img/diagrama_atividade_pratica_prof_utilizada_no_lab_eletrica.jpg" width="560px">
+            </div>
+            <br><br>
+            <h2>Exercício Prático - Laboratório Elétrica ( Senai - CAD SIMU )</h2>
+            <br>
+            <div>
+                <video src="../video/atividade_pratica_prof_lab_eletrica_cad_simu.mp4" type="video/mp4" controls width="560px"></video>
+            </div>
+            <br><br>
+            <h2>Descrição</h2>
+            <br>
+            <p>Funcionamento: Este exercício prático consolida a integração completa dos conceitos anteriores. O circuito começa com a alimentação protegida pelo Disjuntor (ou Fusíveis) de Comando e Disjuntor Motor de Potência. A energia 24Vdc (+) desce primeiramente pelas proteções em série, incluindo o contato Normalmente Fechado do Relé Térmico (F1 ➔ 95-96) que monitora a corrente no motor. A partir daí, o operador pressiona o Botão de Liga (Push NA ➔ B1 ➔ 13-14), permitindo a energização da Bobina do Contator (K1 ➔ A1-A2), que imediatamente sela o próprio acionamento ao fechar o Contato de Selo (K1 ➔ NA ➔ 13-14) disposto em paralelo ao Botão B1.</p>
+            <br>
+            <p>Com K1 selado, seus contatos auxiliares também fecham (K1 ➔ NA) energizando as sinaleiras adequadas (Luzes Piloto H1/H2) para sinalizar "Motor em Operação". Simultaneamente, no circuito de potência, os contatos principais (K1 ➔ 1, 3, 5 para 2, 4, 6) permitem a passagem franca da rede trifásica pelo Relé Térmico, partindo o Motor Elétrico de indução. Caso ocorra uma sobrecarga mecânica ou falha, o bimetálico do Relé Térmico atua fisicamente, abrindo (95-96) - o que derruba imediatamente a Bobina K1 e paralisa a máquina - e fechando seu contato Normally Open (F1 ➔ NA ➔ 97-98), energizando um LED Sinalizador Vermelho de falha (H3). A interrupção manual segura acontece pressionando o Botão Desliga (Push NF ➔ B0 ➔ 11-12) também no início do circuito de comando, desmagnetizando tudo até a próxima rotina.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+    </main>
+    <footer>
+        by Arthur Furtado Machado &copy; &trade;
+        <br><br><br>
+    </footer>
+</body>
+</html>
