@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sistema de Medição de Grandezas Físicas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"> Introdução </a>
+            <a href="./simulacoes.html"> Simulações e Diagramas </a>
+            <a href="./componentes.html"> Componentes </a>
+            <a href="./tia_portal_conceitos.html"> TIA Portal V20 - Conceitos em Ladder </a>
+            <a href="./tia_portal_circuito_semaforo.html"> TIA Portal V20 - Circuito Semáforo Sequencial </a>
+            <a href="./conclusao.html"> Conclusão </a>
+            <a href="./teste.html"> Teste </a>
+        </nav>
+    </header>
+    <main>
+        <h1 class="h1">TIA Portal V20 - Circuito Semáforo Sequencial</h1>
+        <br><br>
+
+
+        <div class="fundo_geral">
+            <h2>Configuração do Dispositivo (Device Config)</h2>
+            <br>
+            <div>
+                <img src="../img/tia_portal_device_config_plc.jpg"">
+            </div>
+            <br><br>
+            <h2>Por quê / Função de usar o Device Config</h2>
+            <br>
+            <p><strong>Função:</strong> Declarar e parametrizar o modelo exato do hardware (CPU 1215C DC/DC/DC) que será utilizado no projeto.</p>
+            <br>
+            <p><strong>Por quê usar:</strong> É o passo inicial obrigatório para qualquer projeto no TIA Portal. Sem especificar o hardware correto, o software não consegue compilar o código nem realizar o download para a máquina, pois precisa conhecer os limites físicos de memória, a quantidade exata de pinos de automação e as configurações de comunicação de rede do CLP real.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+
+
+        <div class="fundo_geral">
+            <h2>Tabela de Variáveis (Default Tag Table)</h2>
+            <br>
+            <div>
+                <img src="../img/tia_portal_default_tag.jpg"">
+            </div>
+            <br><br>
+            <h2>Por quê / Função de usar a Tag Table</h2>
+            <br>
+            <p><strong>Função:</strong> Mapear os endereços físicos de entrada e saída do CLP, vinculando-os a nomes simbólicos.</p>
+            <br>
+            <p><strong>Por quê usar:</strong> Evita que o programador tenha de trabalhar diretamente com códigos abstratos de máquina (como %I0.0 ou %Q0.1) dentro da lógica Ladder. Ao criar este "dicionário", o desenvolvimento torna-se intuitivo, profissional e de fácil manutenção, permitindo que alterações em portas físicas reais sejam corrigidas centralizadamente na tabela sem quebrar o programa.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+
+
+        <div class="fundo_geral">
+            <h2>Bloco Principal (OB1)</h2>
+            <br>
+            <div>
+                <img src="../img/tia_portal_ob1.jpg"">
+            </div>
+            <br><br>
+            <h2>Por quê / Função de usar o OB1</h2>
+            <br>
+            <p><strong>Função:</strong> Atuar como o bloco de organização cíclico padrão e ponto de partida do sistema operacional do CLP.</p>
+            <br>
+            <p><strong>Por quê usar:</strong> O CLP executa o código de forma sequencial repetitiva (ciclo de varredura / scan). O OB1 é essencial porque funciona como o gerenciador mestre: tudo o que deve rodar continuamente precisa estar dentro dele ou ser chamado por ele. No projeto, ele serve para invocar a sinaleira e garantir que a lógica do semáforo nunca pare de rodar.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+
+
+        <div class="fundo_geral">
+            <h2>Bloco de Função (FB1) - Lógica da Sinaleira</h2>
+            <br>
+            <div>
+                <img src="../img/tia_portal_fb_parte_01.jpg""><br><br>
+                <img src="../img/tia_portal_fb_parte_02.jpg""><br><br>
+                <img src="../img/tia_portal_fb_parte_03.jpg""><br><br>
+                <img src="../img/tia_portal_fb_parte_04.jpg""><br><br>
+                <img src="../img/tia_portal_fb_parte_05.jpg"">
+            </div>
+            <br><br>
+            <h2>Por quê / Função de usar um Bloco FB</h2>
+            <br>
+            <p><strong>Função:</strong> Encapsular toda a lógica do semáforo em um bloco com <strong>memória própria</strong> (Data Block de Instância), permitindo que o sistema lembre do seu estado atual de um ciclo de leitura para o outro.</p>
+            <br>
+            <p><strong>Por quê usar FB:</strong> O controle de um semáforo depende fortemente de temporizadores (que precisam guardar o tempo já percorrido) e da retenção de estados (saber exatamente qual luz está acesa no momento). O <em>Function Block (FB)</em> é a escolha ideal na programação CLP porque ele retém essas informações na memória sem perder os dados. Além disso, deixa o bloco principal (OB1) muito mais limpo e permite que a mesma lógica seja reaproveitada facilmente (se você quisesse adicionar um segundo semáforo, bastaria chamar o FB1 novamente criando um novo Data Block, sem misturar as temporizações).</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+    </main>
+    <footer>
+        by Arthur Furtado Machado &copy; &trade;
+        <br><br><br>
+    </footer>
+</body>
+</html>
