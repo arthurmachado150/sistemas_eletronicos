@@ -84,10 +84,9 @@ h2 {
 }
 
 img, video {
-    width: 800px;
     border-radius: 10px;
     border: black 3px solid;
-
+    
     /* 5. Evita que imagens e vídeos estourem a tela do celular */
     max-width: 100%;
 }
