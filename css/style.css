@@ -67,7 +67,7 @@ main {
 }
 
 .fundo_geral_02 {
-    background-color: rgb(74, 86, 141);
+    background-color: rgb(83, 66, 179);
     border-radius: 10px;
     border: rgb(9, 38, 59) 4px solid;
     padding: 10px 10px;
@@ -85,7 +85,7 @@ h2 {
     background-color: rgb(98, 192, 215);
     padding: 16px 16px;
     border-radius: 4px;
-    border: rgb(82, 163, 221) 3px solid;
+    border: rgb(29, 116, 179) 3px solid;
 }
 
 .negrito {
