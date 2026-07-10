@@ -66,6 +66,16 @@ main {
     margin: 20px 5%;
 }
 
+.fundo_geral_02 {
+    background-color: rgb(74, 86, 141);
+    border-radius: 10px;
+    border: rgb(9, 38, 59) 4px solid;
+    padding: 10px 10px;
+
+    /* 5. Trocado de 80px para 5% para ser responsivo */
+    margin: 20px 5%;
+}
+
 .h1 {
     font-size: 2.5rem;
     font-weight: bold;
