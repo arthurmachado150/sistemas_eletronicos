@@ -94,7 +94,7 @@
             <h2>Bobina Set em Ladder</h2>
             <br>
             <div>
-                <img src="../img/" width="500px">
+                <img src="../img/bobina_set_tia_portal.jpg" width="500px">
             </div>
             <br>
             <p>É uma instrução de saída que, ao receber um pulso lógico ativo, ativa seu endereço e o mantém retido ("travado" em 1). Mesmo que o contato de entrada volte para o estado de repouso, a bobina permanece ligada até receber um comando de Reset.</p>
@@ -111,7 +111,7 @@
             <h2>Bobina Reset em Ladder</h2>
             <br>
             <div>
-                <img src="../img/" width="500px">
+                <img src="../img/bobina_reset_tia_portal.jpg" width="500px">
             </div>
             <br>
             <p>É a instrução utilizada em conjunto com a Bobina Set. Ao ser acionada, ela quebra a retenção da memória e força o endereço de volta ao seu estado de repouso (Desativado - 0).</p>
@@ -202,10 +202,6 @@
         <div class="fundo_geral">
             <h2>Endereçamentos de Entrada em Ladder (I0.0, I1.0, etc...)</h2>
             <br>
-            <div>
-                <img src="../img/" width="500px">
-            </div>
-            <br>
             <p>Representam as entradas físicas (Inputs) do CLP mapeadas dentro do programa Ladder. São os endereços que recebem os sinais elétricos diretos de botões e sensores externos quando acionados em campo.</p>
             <br>
         </div>
@@ -216,10 +212,6 @@
         
         <div class="fundo_geral">
             <h2>Endereçamentos de Saída em Ladder (Q0.0, Q1.0, etc...)</h2>
-            <br>
-            <div>
-                <img src="../img/" width="500px">
-            </div>
             <br>
             <p>Representam as saídas físicas (Outputs) do CLP no programa Ladder. São as instruções responsáveis por comandar os atuadores reais conectados ao CLP, tais como motores, lâmpadas e contatores.</p>
             <br>
@@ -232,11 +224,59 @@
         <div class="fundo_geral">
             <h2>Endereçamentos de Memória em Ladder (M10.0, M11.0, etc...)</h2>
             <br>
-            <div>
-                <img src="../img/" width="500px">
+            <p>São bits de memória interna conhecidos como marcadores virtuais dentro da lógica Ladder. Funcionam como contatos ou bobinas internas para armazenar estados e ajudar no sequenciamento do código, sem necessitar de uma saída física direta.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        
+        
+        <div class="fundo_geral">
+            <h2>Memória no CLP: Bit, Byte e Word</h2>
+            <br>
+            <p>Na programação de CLPs (Controladores Lógicos Programáveis), toda a informação — desde um simples botão de emergência até a temperatura de um equipamento, ambiente ou circuito — é armazenada e processada através de uma memória na forma de sinais binários (0 ou 1).</p>
+            <br>
+            <p>Para organização dessas informações, a memória do CLP é organizada em 3 unidades principais:</p>
+            <br>
+            <div class="fundo_geral_02">
+                <h2>•  Bit (Dígito Binário):</h2>
+                <br>
+                <p>É a menor unidade de informação possível, e só pode assumir dois valores: 0 (Desligado/Falso) ou 1 (Ligado/Verdadeiro).</p>
+                <br>
+                <p>Ele representa as variáveis do tipo BOOL (Booleanas), e é o sinal de entradas e saídas digitais, como botões, sensores liga/desliga e flags de memória (como as marcas M).</p>
+                <br>
+                <h2>Exemplo:</h2>
+                <br>
+                <p>I0.0 - Botão de Desligar (pressionado = 1, solto = 0), I0.1 - Botão de Ligar (pressionado = 1, solto = 0).</p>
+                <br>
             </div>
             <br>
-            <p>São bits de memória interna conhecidos como marcadores virtuais dentro da lógica Ladder. Funcionam como contatos ou bobinas internas para armazenar estados e ajudar no sequenciamento do código, sem necessitar de uma saída física direta.</p>
+            <div class="fundo_geral_02">
+                <h2>•  Byte (8 Bits — Bit 0 ao Bit 7):</h2>
+                <br>
+                <p>É um conjunto de 8 Bits agrupados que permite representar valores numéricos inteiros de 0 a 255, sendo utilizado para armazenar dados como: caracteres simples, pequenos contadores ou códigos de status.</p>
+                <br>
+                <p>No TIA Portal, o acesso de um byte é feito através do identificador B (ex: IB10, QB10 ou MB10).</p>
+                <br>
+                <h2>Exemplo:</h2>
+                <br>
+                <p>De M0.0 até M0.7.</p>
+                <br>
+            </div>
+            <br>
+            <div class="fundo_geral_02">
+                <h2>•  Word (Palavra):</h2>
+                <br>
+                <p>É um conjunto de 16 Bits agrupados que podem representar valores de 0 a 65.535 ou de -32.768 a +32.767, usada para sinais analógicos, como sensores de pressão, nível, temperatura, entre outros.</p>
+                <br>
+                <p>No TIA Portal, o acesso de uma word é feito através do identificador W.</p>
+                <br>
+                <h2>Exemplo:</h2>
+                <br>
+                <p>IW40, QW10, MW20.</p>
+                <br>
+            </div>
             <br>
         </div>
         <br><br>
