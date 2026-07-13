@@ -128,7 +128,7 @@
             <h2>TON (Timer On Delay - Atraso na Energização) em Ladder</h2>
             <br>
             <div>
-                <img src="../img/" width="500px">
+                <img src="../img/ton_tia_portal.jpg" width="500px">
             </div>
             <br>
             <p>É um temporizador utilizado para esperar um número definido de segundos, milissegundos, etc... após ser energizado para permitir a passagem de energia após o Contato NA ser acionado ou NF ser mantido em seu estado.</p>
@@ -143,7 +143,7 @@
             <h2>TOF (Timer Off Delay - Atraso na Desenergização) em Ladder</h2>
             <br>
             <div>
-                <img src="../img/" width="500px">
+                <img src="../img/tof_tia_portal.jpg" width="500px">
             </div>
             <br>
             <p>É o oposto do TON, pois é um temporizador utilizado para esperar um número definido de segundos, milissegundos, etc... após ser desenergizado para impedir a passagem de energia após o Contato NA ser desativado ou NF ser acionado.</p>
@@ -158,7 +158,7 @@
             <h2>TP (Timer Pulse - Temporizador de Pulso) em Ladder</h2>
             <br>
             <div>
-                <img src="../img/" width="500px">
+                <img src="../img/tp_tia_portal.jpg" width="500px">
             </div>
             <br>
             <p>É um temporizador utilizado para gerar uma saída ativa por um período de tempo predefinido exato. Assim que recebe um pulso na entrada, a sua saída é ligada e o tempo começa a contar, permanecendo ativa mesmo que o sinal de entrada seja desativado antes do tempo terminar. Após o fim do tempo programado, a saída desliga automaticamente.</p>
@@ -173,7 +173,7 @@
             <h2>CTU (Count Up - Contador Crescente) em Ladder</h2>
             <br>
             <div>
-                <img src="../img/" width="500px">
+                <img src="../img/ctu_tia_portal.jpg" width="500px">
             </div>
             <br>
             <p>É uma instrução de contagem utilizada para incrementar (somar) uma unidade ao seu valor acumulado interno toda vez que a sua entrada de contagem recebe uma transição de sinal (borda de subida). Quando o valor acumulado atingir o valor limite predefinido, sua saída lógica é ligada, permanecendo assim até que a entrada de Reset seja acionada para zerar o contador.</p>
@@ -188,10 +188,25 @@
             <h2>CTD (Count Down - Contador Decrescente) em Ladder</h2>
             <br>
             <div>
-                <img src="../img/" width="500px">
+                <img src="../img/ctd_tia_portal.jpg" width="500px">
             </div>
             <br>
             <p>É uma instrução de contagem utilizada para decrementar (subtrair) uma unidade de seu valor acumulado interno a cada transição de sinal em sua entrada de contagem. É frequentemente associado ao carregamento de um valor inicial e realiza a contagem regressiva em direção a zero ou ao limite configurado para ativar sua saída lógica.</p>
+            <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        
+        
+        <div class="fundo_geral">
+            <h2>CTUD (Count Up/Down - Contador Crescente/Decrescente) em Ladder</h2>
+            <br>
+            <div>
+                <img src="../img/" width="500px">
+            </div>
+            <br>
+            <p>É uma instrução de contagem bidirecional utilizada para incrementar ou decrementar o seu valor acumulado interno de acordo com a entrada acionada. Ela possui duas entradas de contagem distintas: uma para somar uma unidade (borda de subida em CU) e outra para subtrair uma unidade (borda de subida em CD). Sua saída de limite superior (QU) é ligada quando o valor acumulado atinge ou supera o valor limite predefinido (PV), enquanto sua saída de limite inferior (QD) é ligada quando o valor acumulado é menor ou igual a zero, possuindo ainda entradas dedicadas para zerar o acumulador (Reset - R) ou carregá-lo diretamente com o valor limite (Load - LD).</p>
             <br>
         </div>
         <br><br>
