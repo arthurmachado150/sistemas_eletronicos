@@ -249,7 +249,7 @@
             <br>
             <p>Após ligar o disjuntor D1, o circuito é alimentado em 24 Vdc. Em repouso, B0 permanece fechado, B1 e B2 permanecem abertos por ação da mola interna, as bobinas de K1 e K2 permanecem desenergizadas, seus respectivos contatos permanecem em suas posições normais e as sinaleiras H1 e H2 permanecem apagadas.</p>
             <br>
-            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato de selo (13-14) e mantendo a bobina energizada após a liberação do botão. Simultaneamente, outro contato auxiliar alimenta a sinaleira H1, que acende.</p>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato de selo (13-14) e mantendo a bobina energizada após a liberação do botão. Simultaneamente, a sinaleira H1 que está em paralelo a bobina de K1, acende.</p>
             <br>
             <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. Entretanto, K1 permanece energizado através do contato de selo.</p>
             <br>
@@ -278,17 +278,21 @@
             <br><br>
             <h2>Funcionamento:</h2>
             <br>
-            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de parada normalmente fechado (B0), um botão de partida normalmente aberto (B1), um contator (K1), relés temporizadores (KT1 e KT2) e a sinaleira H1.</p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de parada normalmente fechado (B0), um botão de partida normalmente aberto (B1), um contator (K1), dois relés temporizadores (KT1 e KT2) e a sinaleira H1, sendo alimentado por 24 Vdc.</p>
             <br>
-            <p>Após ligar o disjuntor D1, o circuito é alimentado em 24 Vdc. Em repouso, B0 permanece fechado, B1 permanece aberto por ação da mola interna, a bobina de K1 e os temporizadores permanecem desenergizados e a sinaleira H1 permanece apagada.</p>
+            <p>Após ligar o disjuntor D1, o circuito é energizado. Em repouso, B0 permanece fechado, B1 permanece aberto por ação da mola interna, a bobina do contator K1 e as bobinas dos temporizadores KT1 e KT2 permanecem desenergizadas, mantendo seus respectivos contatos em suas posições normais e a sinaleira H1 apagada.</p>
             <br>
-            <p>Ao pressionar B1, a bobina de K1 e o temporizador KT1 são energizados. O campo eletromagnético altera o estado dos contatos de K1, fechando o contato de selo (13-14) e mantendo a bobina energizada após a liberação do botão.</p>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato auxiliar 13-14, que realiza o contato de selo e mantém a bobina energizada após a liberação do botão. Simultaneamente, o temporizador KT1 é energizado através do contato temporizado normalmente fechado 25-26 de KT2, iniciando sua temporização.</p>
             <br>
-            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. Entretanto, o circuito permanece energizado através do contato de selo enquanto KT1 realiza a contagem do tempo ajustado.</p>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. Entretanto, a bobina de K1 permanece energizada pelo contato de selo, mantendo também a alimentação do temporizador KT1.</p>
             <br>
-            <p>Após o tempo programado, o contato temporizado normalmente aberto de KT1 fecha, alimentando a sinaleira H1, que acende.</p>
+            <p>Ao término da temporização de KT1, seus contatos temporizados 15-18 e 25-28 fecham simultaneamente. O contato 15-18 energiza a bobina do temporizador KT2, iniciando sua temporização, enquanto o contato 25-28 alimenta a sinaleira H1, que acende.</p>
             <br>
-            <p>Ao pressionar B0, a alimentação da bobina do contator e do temporizador é interrompida. Os contatos retornam às posições normais, a temporização é cancelada, a sinaleira H1 apaga e o circuito retorna ao estado inicial.</p>
+            <p>Ao término da temporização de KT2, seu contato temporizado normalmente fechado 25-26 abre, interrompendo a alimentação do temporizador KT1. Com isso, KT1 é desenergizado, seus contatos retornam às posições normais, a bobina de KT2 também é desenergizada e a alimentação da sinaleira H1 é interrompida, fazendo com que ela apague.</p>
+            <br>
+            <p>Após a desenergização de KT2, o contato 25-26 retorna automaticamente à condição normalmente fechada, permitindo que KT1 seja energizado novamente através do contato de selo de K1. O processo reinicia automaticamente, fazendo com que a sinaleira H1 acenda e apague continuamente em ciclos sucessivos enquanto K1 permanecer energizado.</p>
+            <br>
+            <p>Ao pressionar B0, a alimentação da bobina do contator K1 é interrompida. O contato de selo é desfeito, as bobinas dos temporizadores KT1 e KT2 são desenergizadas, seus respectivos contatos retornam às posições normais e a sinaleira H1 permanece apagada, retornando o circuito ao estado inicial.</p>
             <br>
         </div>
         <br><br>
@@ -321,7 +325,7 @@
             <br>
             <p>Ao pressionar B0, a alimentação da bobina é interrompida. Seus respectivos contatos retornam às posições normais por ação da mola de retorno do contator, o contato de selo é desfeito e a sinaleira H1 apaga.</p>
             <br>
-            <p>Caso o botão de emergência BE seja acionado, seu contato normalmente fechado abre imediatamente, interrompendo a alimentação da bobina do contator, e logo após retornando a seu estado de repouso por ação de sua mola interna.</p>
+            <p>Caso o botão de emergência BE seja acionado, seu contato normalmente fechado abre imediatamente, interrompendo a alimentação da bobina do contator, e logo após retorna a seu estado de repouso por ação de sua mola interna.</p>
             <br>
         </div>
         <br><br>
