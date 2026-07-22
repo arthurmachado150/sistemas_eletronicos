@@ -16,388 +16,577 @@
             <a href="./tia_portal_circuito_semaforo.html"> TIA Portal V20 - Circuito Semáforo Sequencial </a>
             <a href="./tia_portal_passo_a_passo.html"> TIA Portal V20 - Passo a Passo </a>
             <a href="./conclusao.html"> Conclusão </a>
-            <a href="./teste.html"> Teste </a>
         </nav>
     </header>
     <main>
         <h1 class="h1">Simulações e Diagramas</h1>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Tutorial" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/tutorial.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/tutorial.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Tutorial" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Tutorial" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/tutorial_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/tutorial_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p>Funcionamento: Após iniciar simulação o LED Sinalizador Verde (H1 ➔ contato de entrada = X1, contato de saída = X2) acende de imediato, pois não há nada que impeça a energia de chegar e circular por ele, assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo LED Sinalizador Verde e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto), só sendo desativado após encerrar a simulação</p>
+            <p>O circuito possui um LED (H1) ligado diretamente entre os terminais +24 Vdc e 0 Vdc da fonte de alimentação.</p>
+            <br>
+            <p>Ao iniciar a simulação, a corrente elétrica percorre continuamente o circuito, alimentando o LED H1, que permanece aceso durante todo o funcionamento, pois não existem dispositivos de comando ou proteção interrompendo a circulação da corrente.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 1 - Acionando um LED com Botão" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_01.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_01.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 1 - Acionando um LED com Botão" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 1 - Acionando um LED com Botão" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_01_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_01_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p>Funcionamento: Logo após iniciar a simulação, ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pelo LED Sinalizador Verde (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser enrgizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pelo LED Sinalizador Verde (H1) e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto).</p>
+            <p>O circuito utiliza um botão pulsador normalmente aberto (B1) para controlar o LED H1.</p>
             <br>
-            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito e impedindo a passagem de energia, que por consequência desliga o LED Sinalizador Verde (H1).</p>
+            <p>Em repouso, B1 permanece aberto por ação da mola interna, impedindo a circulação da corrente elétrica e mantendo o LED H1 apagado.</p>
+            <br>
+            <p>Ao pressionar B1, o contato 13-14 fecha, permitindo que a corrente percorra o circuito entre +24 Vdc e 0 Vdc, alimentando o LED H1, que acende enquanto o botão permanecer pressionado.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. O contato 13-14 volta à condição normalmente aberta, interrompendo a alimentação do LED, que apaga.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 2 - Acionando um LED com Botão e Disjuntor" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_02.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_02.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 2 - Acionando um LED com Botão e Disjuntor" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 2 - Acionando um LED com Botão e Disjuntor" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_02_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_02_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pelo LED Sinalizador Verde (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser enrgizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (ativado), pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pelo LED Sinalizador Verde (H1) e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto).</p>
+            <p>O circuito utiliza um disjuntor monofásico (D1) para proteção da alimentação e um botão pulsador normalmente aberto (B1) para comandar o LED H1.</p>
             <br>
-            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito (que se segue a partir dele) e impedindo a passagem de energia, que por consequência desliga o LED Sinalizador Verde; após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <p>Com D1 desligado, o circuito permanece desenergizado e o LED H1 permanece apagado.</p>
+            <br>
+            <p>Após ligar o disjuntor, a alimentação em 24 Vdc é restabelecida. Entretanto, como B1 permanece em repouso por ação da mola interna, seu contato continua aberto e o LED permanece apagado.</p>
+            <br>
+            <p>Ao pressionar B1, o contato 13-14 fecha, permitindo a circulação da corrente elétrica e alimentando o LED H1, que acende.</p>
+            <br>
+            <p>Ao liberar o botão, ele retorna automaticamente à posição de repouso por ação da mola interna. O contato volta à condição normalmente aberta e o LED H1 apaga.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 3 - Acionando dois LEDs (Botão NA e NF)" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_03.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_03.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 3 - Acionando dois LEDs (Botão NA e NF)" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 3 - Acionando dois LEDs (Botão NA e NF)" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_03_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_03_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão 1 do Tipo Push que possui seus contatos tanto em Normalmente Aberto quanto em Normalmente Fechado (conectados por mola ) (Push Button NA e NF ➔ B1 - NA: contato de entrada = 13, contato de saída = 14 | ➔ B1 - NF: contato de entrada = 21, contato de saída = 22 ) o B1 (NA) passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) e o B1 (NF) passa de Normalmente Fechado (NF) para Normalmente Aberto (NA) enquanto pressionado, assim permitindo a passagem de energia pelo Botão 1 do Tipo Push (B1 - NA) e pelo LED Sinalizador Verde 2 (H2 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser enrgizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento; e ao mesmo tempo o Botão 1 do Tipo Push (B1 - NF) se abre, impedindo a passagem de energia por ele e pelo e pelo LED Sinalizador Verde 1 (H1 ➔ contato de entrada = X1, contato de saída = X2); assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão do pelo Botão 1 do Tipo Push (B1 - NA) e apenas pela entrada do Botão 1 do Tipo Push (B1 - NF) enquanto pressionado, pelo LED Sinalizador Verde 2 (H2) e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto).</p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão pulsador (B1) com um contato normalmente aberto (13-14) e um contato normalmente fechado (21-22) para comandar dois LEDs.</p>
             <br>
-            <p>Ao deixar de pressionar o Botão 1 do Tipo Push, o B1 (NA) passa de "NF" para "NA" e o B1 (NF) passa de "NA" para "NF" por meio da ação de sua mola interna, assim abrindo o circuito que se segue a partir B1 (NA) impedindo a passagem de energia e fechando o circuito que segue a partir do B1 (NF) liberando a passagem de energia, que por consequência desliga o LED Sinalizador Verde 2 (H2) e liga o LED Sinalizador Verde 1 (H1) ao qual a saída também está conectada ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <p>Após ligar o disjuntor D1, o circuito é alimentado em 24 Vdc.</p>
+            <br>
+            <p>Em repouso, B1 permanece na posição normal por ação da mola interna. O contato 21-22 permanece fechado, alimentando o LED H1, que permanece aceso, enquanto o contato 13-14 permanece aberto, mantendo o LED H2 apagado.</p>
+            <br>
+            <p>Ao pressionar B1, o contato 21-22 abre, interrompendo a alimentação do LED H1, que apaga. Simultaneamente, o contato 13-14 fecha, permitindo a alimentação do LED H2, que acende.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. Os contatos retornam às suas condições normais, fazendo com que o LED H1 volte a acender e o LED H2 apague.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 4 - Acionando um LED (Contator)" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_04.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_04.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 4 - Acionando um LED (Contator)" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 4 - Acionando um LED (Contator)" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_04_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_04_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pela Bobina do Contator 1 (K1 ➔ contato de entrada = A1, contato de saída = A2) que é ativada, criando um campo magnético que magnetiza o contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 13, contato de saída = 14) do Contator 1 (K1), fechando-o e permitindo a passagem de energia pelo LED Sinalizador Verde (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser enrgizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento, e por todo o circuito; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pela Bobina do Contator 1 (K1) que é ativada, criando um campo magnético que fecha o contato Normalmente Aberto do Contator 1 (K1 ➔ NA), o qual a entrada também está conectada à saída do contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1), permitindo assim a passagem de energia pelo LED Sinalizador Verde (H1) e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto) que também está conectado à saída da Bobina do Contator 1 (K1 ➔ A2).</p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de pulso normalmente aberto (B1), um contator (K1) e um LED (H1).</p>
             <br>
-            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito (que se segue a partir dele), impedindo a passagem de energia pela Bobina do Contator 1 (K1) que é desenergizada, fazendo com que o campo magnético seja desfeito, o contato Normalmente Aberto do Contator 1 (K1 ➔ NA) seja desmagnetizado e aberto, que por consequência desliga o LED Sinalizador Verde (H1); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <p>Após ligar o disjuntor D1, o circuito é energizado em 24 Vdc. Em repouso, o botão B1 permanece em sua posição normal, a bobina do contator K1 permanece desenergizada, seu contato auxiliar permanece aberto e o LED H1 permanece apagado.</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seu contato auxiliar normalmente aberto (13-14), alimentando o LED H1, que acende enquanto o botão permanecer pressionado.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. A alimentação da bobina de K1 é interrompida, seus contatos retornam às posições normais por ação da mola de retorno do contator e o LED H1 apaga, retornando o circuito ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 5 - Acionando dois LEDs (Contator)" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_05.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_05.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 5 - Acionando dois LEDs (Contator)" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 5 - Acionando dois LEDs (Contator)" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_05_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_05_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), ao apertar o Botão do Tipo Push Normalmente Aberto (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) ele passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pela Bobina do Contator 1 (K1 ➔ contato de entrada = A1, contato de saída = A2) que é ativada, criando um campo magnético que magnetiza o contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 13, contato de saída = 14) e o contato Normalmente Fechado (NF ➔ K1 ➔ contato de entrada = 21, contato de saída = 22) do Contator 1 (K1) conectados por uma mola interna, fechando o contato NA (K1) e abrindo o contato NF (K1), assim permitindo a passagem de energia pelo contato NA (K1) e pelo LED Sinalizador Verde 2 (H2 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser enrgizado, acende pois não há nada que impeça a energia de chegar pelo contato NA (K1) e passar pelo LED Sinalizador Verde 2 (H2) naquele momento; e impedindo a passagem de energia pelo contato NF (K1) e pelo LED Sinalizador Verde 1 (H1 ➔ contato de entrada = X1, contato de saída = X2), desligando-o; assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão do Tipo Push - NA (B1) enquanto pressionado, pela Bobina do Contator 1 (K1) que é ativada, criando um campo magnético que fecha o contato Normalmente Aberto do Contator 1 (K1 ➔ NA) e abre o contato Normalmente Fechado do Contator 1 (K1 ➔ NF), os quais as entradas também estão conectadas à entrada do Botão do Tipo Push - NA (B1), permitindo assim a passagem de energia pelo LED Sinalizador Verde 2 (H2) e impedindo a passagem de energia pelo LED Sinalizador Verde 1 (H1), e ambas as saídas dos LEDs chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto) que também está conectado à saída da Bobina do Contator 1 (K1 ➔ A2).</p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de pulso normalmente aberto (B1), um contator (K1) e dois LEDs (H1 e H2), acionados por contatos auxiliares normalmente fechado e normalmente aberto do contator.</p>
             <br>
-            <p>Ao deixar de pressionar o Botão do Tipo Push - NA, ele passa de NF para NA por meio da ação de sua mola interna, assim abrindo o circuito (que se segue a partir dele), impedindo a passagem de energia pela Bobina do Contator 1 (K1) que é desenergizada, fazendo com que o campo magnético seja desfeito, o contato Normalmente Aberto do Contator 1 (K1 ➔ NA) seja desmagnetizado e aberto, que por consequência desliga o LED Sinalizador Verde 2 (H2); e o contato Normalmente Fechado do Contator 1 (K1 ➔ NF) seja desmagnetizado e fechado, que por consequência liga o LED Sinalizador Verde 1 (H1); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <p>Após ligar o disjuntor D1, o circuito é energizado em 24 Vdc. Em repouso, o botão B1 permanece em sua posição normal, a bobina do contator K1 permanece desenergizada, seus contatos permanecem nas posições normais, o LED H1 permanece aceso, por estar ligado ao contato normalmente fechado (21-22), e o LED H2 permanece apagado, por estar ligado ao contato normalmente aberto (13-14).</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus contatos auxiliares, abrindo o contato normalmente fechado (21-22) e fechando o contato normalmente aberto (13-14). Como consequência, o LED H1 apaga e o LED H2 acende, indicando que o contator foi energizado.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. A alimentação da bobina de K1 é interrompida, seus contatos retornam às posições normais por ação da mola de retorno do contator. O LED H2 apaga e o LED H1 volta a acender, retornando o circuito ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 6 - Contato de selo" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_06.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_06.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 6 - Contato de selo" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 6 - Contato de selo" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_06_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_06_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p>Funcionamento: Logo após iniciar a simulação, e armar (ativar) o Disjuntor Motor (D1 ➔ contato auxiliar: entrada = 1, contato de saída = 2), a energia liberada vai do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passa pelo Disjuntor Motor (D1 ➔ ativado), e pelo Botão do Tipo Push Normalmente Fechado 1 (Push Button NF ➔ B0 ➔ contato de entrada = 11, contato de saída = 12), chegando à entrada do Botão do Tipo Push Normalmente Aberto 2 (Push Button NA ➔ B1 ➔ contato de entrada = 13, contato de saída = 14) que passa de Normalmente Aberto (NA) para Normalmente Fechado (NF) enquanto pressionado, assim permitindo a passagem de energia por ele e pela Bobina do Contator 1 (K1 ➔ contato de entrada = A1, contato de saída = A2) que é ativada, criando um campo magnético que magnetiza o contato Normalmente Aberto (NA ➔ K1 ➔ contato de entrada = 13, contato de saída = 14) do Contator 1 (K1), que foi colocado em paralelo ao Botão do Tipo Push Normalmente Aberto 2 (Push Button NA ➔ B1), fechando-o, fazendo assim um Contato de Selo onde mesmo após deixar de pressionar o Botão do Tipo Push 2 NA (B1 ➔ NF para repouso - NA, por meio da ação de sua mola interna), a Bobina do Contator 1 (K1) se mantém ativa recebendo energia do contato Normalmente Aberto (NA ➔ K1 ➔ 13-14), que ela mesma (Bobina ➔ K1) fechou após criar seu campo magnético; após pressionar Botão do Tipo Push 2 (B1 ➔ NA), e ocorrer todo o processo que falei, além da Bobina do Contator 1 (K1) fechar o Contato de Selo, ela também fechou o contato Normalmente Aberto (NA ➔ K1 ➔ 53-54), permitindo a passagem de energia pelo LED Sinalizador Verde 1 (H1 ➔ contato de entrada = X1, contato de saída = X2) que, ao ser enrgizado, acende pois não há nada que impeça a energia de chegar e circular por ele naquele momento, e por todo o circuito (exceto o Botão do Tipo Push 2 ➔ B1 ➔ NA, quando deixado de ser pressionado e retornar a seu estado de repouso por meio de sua mola interna); assim indo do Terminal de Conexão Positivo de 24Vdc "+" (24 Volts em Corrente Contínua ➔ fio Vermelho), passando pelo contato auxiliar Normalmente Aberto (NA) do Disjuntor Motor (D1 ➔ ativado), pelo Botão do Tipo Push 1 (NF ➔ B0 ➔ 11-12), pelo Botão do Tipo Push 2 (NA ➔ B1 ➔ 13-14) enquanto pressionado, pela Bobina do Contator 1 (K1) que é ativada, criando um campo magnético que fecha o contato Normalmente Aberto do Contator 1 (K1 ➔ NA ➔ 13-14) que está em paralelo com o Botão do Tipo Push 2 (B1 ➔ NA) fazendo o Contato de Selo, e fecha o contato Normalmente Aberto do Contator 1 (NA ➔ K1 ➔ 53-54), o qual a entrada também está conectada à entrada do Botão do Tipo Push 2 (B1 ➔ NA), permitindo assim a passagem de energia pelo LED Sinalizador Verde 1 (H1) e chgando ao Terminal de Conexão Negativo "-" (0Vdc, GND ou Comum ➔ fio Preto) que também está conectado à saída da Bobina do Contator 1 (K1 ➔ A2).</p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de parada normalmente fechado (B0), um botão de partida normalmente aberto (B1), um contator (K1) com contato de selo e um LED (H1).</p>
             <br>
-            <p>Ao pressionar o Botão do Tipo Push 1 (NF ➔ B0 ➔ 11-12), ele passa de NF para NA, assim abrindo o circuito (que se segue a partir dele), impedindo a passagem de energia pelo Botão do Tipo Push 2 (NA ➔ B1), pela Bobina do Contator 1 (K1) que é desenergizada, fazendo com que o campo magnético seja desfeito, o contato contato Normalmente Aberto do Contator 1 (K1 ➔ NA ➔ 13-14) e o contato Normalmente Aberto do Contator 1 (NA ➔ K1 ➔ 53-54) sejam desmagnetizados e abertos, que por consequência desliga o LED Sinalizador Verde (H1); após isso desarmo (desligo) o Disjuntor Motor (D1) para "cortar" totalmente a passagem de energia pelo circuito.</p>
+            <p>Após ligar o disjuntor D1, o circuito é energizado em 24 Vdc. Em repouso, o botão B0 permanece fechado, o botão B1 permanece aberto, a bobina do contator K1 permanece desenergizada, seus contatos permanecem em suas posições normais e o LED H1 permanece apagado.</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus contatos auxiliares, fechando o contato de selo (13-14), que mantém a alimentação da bobina após a liberação do botão, e fechando o contato normalmente aberto (53-54), alimentando o LED H1, que permanece aceso enquanto K1 estiver energizado.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. O contato de selo mantém a bobina de K1 energizada e, consequentemente, o LED H1 permanece aceso.</p>
+            <br>
+            <p>Ao pressionar B0, a alimentação da bobina é interrompida. Seus contatos retornam às posições normais por ação da mola de retorno do contator, desfazendo o contato de selo e abrindo o contato (53-54). Como consequência, o LED H1 apaga, retornando o circuito ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 7 - Comando de Reversão" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_07.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_07.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 7 - Comando de Reversão" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 7 - Comando de Reversão" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_07_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_07_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de parada normalmente fechado (B0), dois botões de partida (B1 e B2), dois contatores (K1 e K2) com contatos de selo e intertravamento elétrico, além dos LEDs H1 e H2.</p>
             <br>
-            <p></p>
+            <p>Após ligar o disjuntor D1, o circuito é alimentado em 24 Vdc. Em repouso, B0 permanece fechado por ação de sua mola interna, B1 e B2 permanecem abertos por ação da mola interna, as bobinas de K1 e K2 permanecem desenergizadas, seus respectivos contatos permanecem em suas posições normais e os LEDs H1 e H2 permanecem apagados.</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato de selo (13-14) e mantendo a bobina energizada após a liberação do botão. Simultaneamente, o LED H1 que está em paralelo a bobina de K1, acende.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. Entretanto, K1 permanece energizado através do contato de selo.</p>
+            <br>
+            <p>Ao pressionar B2, seu contato normalmente fechado interrompe a alimentação da bobina de K1, desfazendo o contato de selo. Simultaneamente, seu contato normalmente aberto energiza a bobina de K2, alterando o estado de seus respectivos contatos. O contato de selo de K2 fecha e o LED H2 acende, enquanto H1 apaga.</p>
+            <br>
+            <p>Ao pressionar B0, a alimentação da bobina energizada é interrompida. Seus respectivos contatos retornam às posições normais por ação da mola de retorno do contator, o LED correspondente apaga e o circuito retorna ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 8 - Acionamento Temporizado" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_08.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_08.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 8 - Acionamento Temporizado" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 8 - Acionamento Temporizado" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_08_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_08_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de parada normalmente fechado (B0), um botão de partida normalmente aberto (B1), um contator (K1), dois relés temporizadores (KT1 e KT2) e o LED H1, sendo alimentado por 24 Vdc.</p>
+            <br>
+            <p>Após ligar o disjuntor D1, o circuito é energizado. Em repouso, B0 permanece fechado por ação de sua mola interna, B1 permanece aberto por ação da mola interna, a bobina do contator K1 e as bobinas dos temporizadores KT1 e KT2 permanecem desenergizadas, mantendo seus respectivos contatos em suas posições normais e o LED H1 apagado.</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato auxiliar 13-14, que realiza o contato de selo e mantém a bobina energizada após a liberação do botão. Simultaneamente, o temporizador KT1 é energizado através do contato temporizado normalmente fechado 25-26 de KT2, iniciando sua temporização.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. Entretanto, a bobina de K1 permanece energizada pelo contato de selo, mantendo também a alimentação do temporizador KT1.</p>
+            <br>
+            <p>Ao término da temporização de KT1, seus contatos temporizados 15-18 e 25-28 fecham simultaneamente. O contato 15-18 energiza a bobina do temporizador KT2, iniciando sua temporização, enquanto o contato 25-28 alimenta o LED H1, que acende.</p>
+            <br>
+            <p>Ao término da temporização de KT2, seu contato temporizado normalmente fechado 25-26 abre, interrompendo a alimentação do temporizador KT1. Com isso, KT1 é desenergizado e seus respectivos contatos retornam às posições normais por ação de suas molas internas, onde a bobina de KT2 é desenergizada e também interrompe a alimentação do LED H1, que apaga.</p>
+            <br>
+            <p>Após a desenergização de KT2, seu respectivo contato retorna à posição normal por ação de suas molas internas. Dessa forma, o contato 25-26 volta à condição normalmente fechada, permitindo que KT1 seja energizado novamente através do contato de selo de K1. O processo reinicia automaticamente, fazendo com que o LED H1 acenda e apague continuamente em ciclos sucessivos enquanto K1 permanecer energizado.</p>
+            <br>
+            <p>Ao pressionar B0, a alimentação da bobina do contator K1 é interrompida. O contato de selo é desfeito, a bobina de K1 retorna ao estado desenergizado e seus respectivos contatos retornam às posições normais por ação de suas molas internas. As bobinas dos temporizadores KT1 e KT2 também são desenergizadas, fazendo com que seus respectivos contatos retornem às posições normais por ação de suas molas internas. O LED H1 permanece apagado e o circuito retorna ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 9 - Partida Direta - Circuito de Comando" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_09.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_09.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 9 - Partida Direta - Circuito de Comando" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 9 - Partida Direta - Circuito de Comando" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_09_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_09_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de emergência normalmente fechado (BE), um botão de parada normalmente fechado (B0), um botão de partida normalmente aberto (B1), um contator (K1) e o LED H1.</p>
+            <br>
+            <p>Após ligar o disjuntor D1, o circuito é alimentado em 24 Vdc. Em repouso, BE e B0 permanecem fechados por ação de suas molas internas, B1 permanece aberto por ação da mola interna, a bobina de K1 permanece desenergizada e o LED H1 permanece apagado.</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato de selo (13-14) e alimentando o LED H1, que acende.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. O contato de selo mantém a bobina energizada e o LED permanece aceso.</p>
+            <br>
+            <p>Ao pressionar B0, a alimentação da bobina é interrompida. Seus respectivos contatos retornam às posições normais por ação da mola de retorno do contator, o contato de selo é desfeito e o LED H1 apaga.</p>
+            <br>
+            <p>Caso o botão de emergência BE seja acionado, seu contato normalmente fechado abre imediatamente, interrompendo a alimentação da bobina do contator, e logo após retorna a seu estado de repouso por ação de sua mola interna.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 10 - Partida Direta - Circuito de Potência" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_10.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_10.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 10 - Partida Direta - Circuito de Potência" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 10 - Partida Direta - Circuito de Potência" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_10_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_10_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito integra um circuito de comando em 24 Vdc a um circuito de potência para o acionamento de um motor trifásico (M1).</p>
+            <br>
+            <p>Após ligar os disjuntores dos circuitos de comando e potência, o circuito permanece energizado e aguarda o comando de partida. Em repouso, BE e B0 permanecem fechados por ação de suas molas internas, B1 permanece aberto por ação da mola interna, a bobina do contator K1 permanece desenergizada, seus contatos principais permanecem abertos, o motor permanece parado e o LED H1 permanece apagado.</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato de selo (13-14) e os contatos principais de potência. O motor M1 recebe alimentação trifásica, inicia sua rotação e o LED H1 acende.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. O contato de selo mantém a bobina energizada e o motor permanece em funcionamento.</p>
+            <br>
+            <p>Ao pressionar B0 ou BE, a alimentação da bobina é interrompida. Seus respectivos contatos retornam às posições normais por ação da mola de retorno do contator, os contatos principais se abrem, a alimentação do motor é interrompida, o LED H1 apaga e o motor para.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 11 - Partida Direta com Reversão - Circuito de Comando" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_11.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_11.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 11 - Partida Direta com Reversão - Circuito de Comando" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 11 - Partida Direta com Reversão - Circuito de Comando" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_11_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_11_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito utiliza dois contatores (K1 e K2) com contatos de selo e intertravamento elétrico, impedindo que ambos sejam energizados simultaneamente.</p>
+            <br>
+            <p>Após ligar o disjuntor D1, o circuito é alimentado em 24 Vdc. Em repouso, os botões permanecem em suas posições normais, as bobinas dos contatores permanecem desenergizadas, seus respectivos contatos permanecem em suas posições normais e os LEDs H1 e H2 permanecem apagados.</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato de selo (13-14) e alimentando o LED correspondente.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. O contato de selo mantém K1 energizado.</p>
+            <br>
+            <p>Enquanto K1 permanecer energizado, seu contato auxiliar normalmente fechado (21-22) realiza o intertravamento elétrico, impedindo a energização da bobina de K2, mesmo que o botão B2 seja pressionado.</p>
+            <br>
+            <p>Após pressionar B0 ou BE, a alimentação da bobina é interrompida. Seus respectivos contatos retornam às posições normais por ação da mola de retorno do contator, desfazendo o contato de selo e o intertravamento. Em seguida, B2 pode ser pressionado para energizar K2, que realiza o mesmo funcionamento, acendendo seu respectivo LED.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 12 - Partida Direta com Reversão - Circuito de Potência" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_12.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_12.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 12 - Partida Direta com Reversão - Circuito de Potência" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 12 - Partida Direta com Reversão - Circuito de Potência" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_12_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_12_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito integra um circuito de comando em 24 Vdc a um circuito de potência para realizar a reversão do sentido de rotação de um motor trifásico (M1), utilizando dois contatores (K1 e K2) com contatos de selo e intertravamento elétrico.</p>
+            <br>
+            <p>Após ligar os disjuntores dos circuitos de comando e potência, o circuito permanece energizado. Em repouso, os botões permanecem em suas posições normais, as bobinas dos contatores permanecem desenergizadas, seus respectivos contatos permanecem em suas posições normais, os LEDs H1 e H2 permanecem apagados e o motor permanece parado.</p>
+            <br>
+            <p>Ao pressionar B1, a bobina do contator K1 é energizada. O campo eletromagnético altera o estado de seus respectivos contatos, fechando o contato de selo (13-14) e os contatos principais de potência. O motor recebe alimentação trifásica e inicia sua rotação no sentido horário. Simultaneamente, o LED H1 é alimentado e permanece aceso enquanto K1 estiver energizado.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. O contato de selo mantém K1 energizado. Enquanto isso, o contato auxiliar normalmente fechado (21-22) realiza o intertravamento elétrico, impedindo a energização simultânea de K2.</p>
+            <br>
+            <p>Ao pressionar B0, a alimentação da bobina é interrompida. Seus respectivos contatos retornam às posições normais por ação da mola de retorno do contator, desfazendo o contato de selo e o intertravamento elétrico. O LED H1 ou H2, conforme o sentido de rotação em operação, é desligado, e o motor para.</p>
+            <br>
+            <p>Em seguida, ao pressionar B2, a bobina do contator K2 é energizada. Seus contatos principais invertem duas fases da alimentação do motor, fazendo com que M1 passe a girar no sentido anti-horário. Simultaneamente, o LED H2 é alimentado e permanece aceso enquanto K2 estiver energizado. O motor permanece em funcionamento até que seja desligado por B0 ou pelo botão de emergência BE, quando existente no circuito.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 13 - Partida Estrela Triângulo - Circuito de Comando" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_13.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_13.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 13 - Partida Estrela Triângulo - Circuito de Comando" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 13 - Partida Estrela Triângulo - Circuito de Comando" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_13_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_13_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito utiliza um disjuntor monofásico (D1), um botão de emergência normalmente fechado (BE), um botão de parada normalmente fechado (B0), um botão de partida normalmente aberto (B1), um contator de linha (K1), um contator estrela (K3), um contator triângulo (K2), um relé temporizador (KT1) para realizar a partida estrela-triângulo automática e dois LEDs (H1 e H2).</p>
+            <br>
+            <p>Após ligar o disjuntor D1, o circuito é alimentado em 24 Vdc. Em repouso, os botões permanecem em suas posições normais, as bobinas dos contatores e do relé temporizador permanecem desenergizadas, seus respectivos contatos permanecem em suas posições normais e os LEDs H1 e H2 permanecem apagados.</p>
+            <br>
+            <p>Ao pressionar B1, as bobinas de K1, K3 e KT1 são energizadas. O campo eletromagnético altera o estado dos contatos de K1 e K3, enquanto o contato auxiliar normalmente aberto (13-14) de K1 forma o contato de selo, mantendo a alimentação da bobina após a liberação do botão, o contato auxiliar normalmente fechado (21-22) de K3 abre, impedindo que a bobina do contator K2 seja energizada após o contato auxiliar normalmente aberto (53-54) de K1 fechar, permitindo a passagem de energia por ele. O circuito permanece operando na configuração estrela. Simultaneamente, o LED H1 é alimentado, indicando a etapa de partida em estrela.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. O contato de selo mantém o circuito energizado enquanto o temporizador realiza a contagem do tempo ajustado.</p>
+            <br>
+            <p>Após o tempo programado, KT1 desenergiza a bobina do contator K3 por meio de seu contato temporizado normalmente fechado 25-26, que se abre, fazendo seus respectivos contatos retornarem às posições normais por ação da mola de retorno do contator. Em seguida, energiza a bobina de K2, alterando o estado de seus respectivos contatos e transferindo automaticamente o circuito para a ligação em triângulo. Nesse instante, H1 apaga e H2 acende, indicando que o circuito passou a operar em triângulo.</p>
+            <br>
+            <p>Ao pressionar B0 ou BE, todas as bobinas são desenergizadas, seus respectivos contatos retornam às posições normais, os LEDs H1 e H2 são desligados e o circuito retorna ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 14 - Partida Estrela Triângulo - Circuito de Potência" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="" type="video/mp4" controls  width="1100px"></video>
+                <video src="" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 14 - Partida Estrela Triângulo - Circuito de Potência" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 14 - Partida Estrela Triângulo - Circuito de Potência" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_14_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_14_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito integra o circuito de comando estrela-triângulo em 24 Vdc ao circuito de potência para o acionamento de um motor trifásico de seis terminais (M1).</p>
+            <br>
+            <p>Após ligar os disjuntores dos circuitos de comando e potência, o circuito permanece energizado. Em repouso, os botões permanecem em suas posições normais, as bobinas dos contatores e do relé temporizador permanecem desenergizadas, seus respectivos contatos permanecem em suas posições normais, os LEDs H1 e H2 permanecem apagados e o motor permanece parado.</p>
+            <br>
+            <p>Ao pressionar B1, as bobinas dos contatores K1 e K3, juntamente com o temporizador KT1, são energizadas. O campo eletromagnético altera o estado de seus respectivos contatos, fechando os contatos principais de potência e alimentando o motor na configuração estrela, reduzindo a corrente de partida. Simultaneamente, o LED H1 acende, indicando a operação em estrela.</p>
+            <br>
+            <p>Ao liberar B1, o botão retorna automaticamente à posição de repouso por ação da mola interna. O contato de selo mantém K1 energizado enquanto o temporizador realiza a contagem programada.</p>
+            <br>
+            <p>Ao término da temporização, KT1 desenergiza K3, cujos contatos retornam às posições normais por ação da mola de retorno do contator. Em seguida, energiza K2, alterando o estado de seus respectivos contatos e estabelecendo automaticamente a ligação em triângulo. O motor permanece em funcionamento em regime nominal. Durante essa transição, H1 apaga e H2 acende, indicando a operação em triângulo.</p>
+            <br>
+            <p>Ao pressionar B0 ou BE, todas as bobinas são desenergizadas, seus respectivos contatos retornam às posições normais, os LEDs H1 e H2 são desligados, a alimentação do motor é interrompida e o circuito retorna ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 15 - Partida Estrela Triângulo com Reversão - Circuito de Comando" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_15.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_15.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 15 - Partida Estrela Triângulo com Reversão - Circuito de Comando" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 15 - Partida Estrela Triângulo com Reversão - Circuito de Comando" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_15_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_15_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito utiliza dois contatores de linha (K1 e K2), um contator estrela (K4), um contator triângulo (K3) e um relé temporizador (KT1) para realizar a partida estrela-triângulo com reversão do sentido de rotação.</p>
+            <br>
+            <p>Após ligar o disjuntor D1, o circuito é alimentado em 24 Vdc. Em repouso, os botões permanecem em suas posições normais, as bobinas dos contatores e do relé temporizador permanecem desenergizadas, seus respectivos contatos permanecem em suas posições normais e os LEDs H1 e H2 permanecem apagados.</p>
+            <br>
+            <p>Ao pressionar B1, as bobinas de K1, K4 e KT1 são energizadas. O campo eletromagnético altera o estado de seus respectivos contatos, enquanto o contato auxiliar normalmente aberto (13-14) de K1 forma o contato de selo, mantendo a bobina energizada após a liberação do botão, ela abre seu contato normalmente fechado (21-22) anterior a bobina do contator K2, fazendo o intertravamento elétrico, impedindo que ele seja acionado simultaneamente, e também fecha seu contato normalmente aberto (53-54), permitindo a passagem de energia até a bobina do contator K4. O circuito inicia a partida do motor na configuração estrela e no sentido horário. Simultaneamente, o LED H1 é alimentado e permanece aceso durante a operação no sentido horário.</p>
+            <br>
+            <p>Após o tempo ajustado, KT1 desenergiza K4, fazendo seus respectivos contatos retornarem às posições normais por ação da mola de retorno do contator. Em seguida, energiza K3, alterando o estado de seus respectivos contatos e transferindo automaticamente o circuito para a ligação em triângulo.</p>
+            <br>
+            <p>Ao pressionar B0, todas as bobinas são desenergizadas, seus respectivos contatos retornam às posições normais e o LED correspondente ao sentido de rotação em operação é desligado, retornando o circuito ao estado inicial.</p>
+            <br>
+            <p>Em seguida, ao pressionar B2, a sequência é repetida utilizando o contator de linha K2. O circuito realiza novamente a partida em estrela e, após a temporização, transfere automaticamente o funcionamento para triângulo, agora no sentido anti-horário. Simultaneamente, o LED H2 é alimentado e permanece aceso durante a operação no sentido anti-horário.</p>
+            <br>
+            <p>Caso o botão de emergência BE seja acionado durante a operação, sua abertura interrompe imediatamente a alimentação das bobinas dos contatores e do relé temporizador. Seus respectivos contatos retornam às posições normais por ação da mola de retorno, os LEDs são desligados e o circuito retorna ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>"Prática 16 - Partida Estrela Triângulo com Reversão - Circuito de Potência" ➔ Laboratório Digital ( Sesi Senai )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_16.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_16.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>"Prática 16 - Partida Estrela Triângulo com Reversão - Circuito de Potência" ➔ Diagrama ( CAD SIMU )</h2>
+            <h2>"Prática 16 - Partida Estrela Triângulo com Reversão - Circuito de Potência" ➔ Diagrama ( CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/exercicio_16_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/exercicio_16_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito integra o circuito de comando estrela-triângulo com reversão em 24 Vdc ao circuito de potência para o acionamento de um motor trifásico de seis terminais (M1).</p>
+            <br>
+            <p>Após ligar os disjuntores dos circuitos de comando e potência, o circuito permanece energizado. Em repouso, os botões permanecem em suas posições normais, as bobinas dos contatores e do relé temporizador permanecem desenergizadas, seus respectivos contatos permanecem em suas posições normais, os LEDs H1 e H2 permanecem apagados e o motor permanece parado.</p>
+            <br>
+            <p>Ao pressionar B1, as bobinas de K1, K4 e KT1 são energizadas. O campo eletromagnético altera o estado de seus respectivos contatos, fechando os contatos principais do circuito de potência. O motor inicia sua rotação no sentido horário em configuração estrela. O contato auxiliar de K1 forma o contato de selo, mantendo a bobina energizada após a liberação do botão. Simultaneamente, o LED H1 é alimentado e permanece aceso durante a operação no sentido horário.</p>
+            <br>
+            <p>Após o tempo programado, KT1 desenergiza K4, cujos contatos retornam às posições normais por ação da mola de retorno do contator. Em seguida, energiza K3, alterando o estado de seus respectivos contatos e estabelecendo automaticamente a ligação em triângulo.</p>
+            <br>
+            <p>Ao pressionar B0, todas as bobinas são desenergizadas, seus respectivos contatos retornam às posições normais, o LED correspondente é desligado, a alimentação do motor é interrompida e o circuito retorna ao estado inicial.</p>
+            <br>
+            <p>Em seguida, ao pressionar B2, a bobina de K2 é energizada e o motor inicia sua rotação no sentido anti-horário em configuração estrela. Após a temporização, KT1 realiza novamente a comutação para triângulo, mantendo o motor em funcionamento. Simultaneamente, o LED H2 é alimentado e permanece aceso durante a operação no sentido anti-horário.</p>
+            <br>
+            <p>Caso o botão de emergência BE seja acionado durante a operação, sua abertura interrompe imediatamente a alimentação das bobinas dos contatores e do relé temporizador. Seus respectivos contatos retornam às posições normais por ação da mola de retorno, os LEDs são desligados, a alimentação do motor é interrompida e o circuito retorna ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>Exercício Prático ( Partida Direta ) - Laboratório Elétrica ( Senai )</h2>
             <br>
             <div>
-                <video src="../video/atividade_pratica_prof_lab_eletrica.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/atividade_pratica_prof_lab_eletrica.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
             <h2>Exercício Prático ( Partida Direta ) - Laboratório Elétrica ( Senai - Diagrama utilizado para a montagem e funcionamento (Presente no Vídeo) )</h2>
@@ -406,25 +595,38 @@
                 <img src="../img/diagrama_atividade_pratica_prof_utilizada_no_lab_eletrica.jpg" width="500px">
             </div>
             <br><br>
-            <h2>Exercício Prático ( Partida Direta ) - Laboratório Elétrica ( Senai - CAD SIMU )</h2>
+            <h2>Exercício Prático ( Partida Direta ) - Laboratório Elétrica ( Senai - CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/diagrama_atividade_pratica_prof_lab_eletrica_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/diagrama_atividade_pratica_prof_lab_eletrica_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito integra um circuito de comando alimentado em corrente alternada (CA), utilizando alimentação fase-fase, a um circuito de potência responsável pelo acionamento de um motor trifásico (M1). Conforme o diagrama, o circuito utiliza um disjuntor termomagnético trifásico (D2) para proteção do circuito de potência, um disjuntor termomagnético bifásico (D1) para alimentação do circuito de comando, um contator (K1), um relé térmico (F1), um botão de parada normalmente fechado (B0), um botão de partida normalmente aberto (B1) e uma sinaleira LED (H1), utilizada para indicar quando o contator está energizado.</p>
+            <br>
+            <p>Diferentemente das práticas anteriores realizadas no CADe SIMU, nas quais o circuito de comando era alimentado em 24 Vdc, nesta montagem a alimentação é feita entre duas fases da rede trifásica (fase-fase).</p>
+            <br>
+            <p>Após acionar a chave seletora / manopla (presente na bancada física) e ligar os disjuntores D1 e D2, o circuito é energizado. Em repouso, a bobina do contator permanece desenergizada, a sinaleira LED H1 permanece apagada e o motor permanece desligado.</p>
+            <br>
+            <p>Antes de realizar qualquer acionamento, é recomendado que uma pessoa fique responsável pelo comando do circuito enquanto outra permaneça próxima ao botão de emergência, permitindo a interrupção imediata da alimentação caso ocorra alguma ligação incorreta, curto-circuito, cheiro de queimado ou qualquer outra situação anormal.</p>
+            <br>
+            <p>Ao pressionar o botão B1, a bobina do contator K1 é energizada após a corrente percorrer o botão de parada (B0) e o contato normalmente fechado do relé térmico (95-96). Os contatos principais fecham o circuito de potência, o contato auxiliar (13-14) realiza o contato de selo, a sinaleira LED H1 acende e o motor entra em funcionamento.</p>
+            <br>
+            <p>Ao pressionar o botão de parada (B0) ou o botão de emergência da bancada, a bobina do contator K1 é desenergizada, os contatos retornam às posições normais, a sinaleira LED H1 apaga, o motor é desligado e o circuito retorna ao estado inicial.</p>
             <br>
         </div>
         <br><br>
         <hr>
         <br><br>
+
+
         <div class="fundo_geral">
+            <br>
             <h2>Exercício Prático ( Partida Direta Reversora ) - Laboratório Elétrica ( Senai )</h2>
             <br>
             <div>
-                <video src="../video/atividade_pratica_prof_no_lab_eletrica_partida_direta_reversora.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/atividade_pratica_prof_no_lab_eletrica_partida_direta_reversora.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
             <h2>Exercício Prático ( Partida Direta Reversora ) - Laboratório Elétrica ( Senai - Diagrama utilizado para a montagem e funcionamento (Presente no Vídeo) )</h2>
@@ -433,15 +635,27 @@
                 <img src="../img/diagrama_atividade_pratica_prof_utilizada_no_lab_eletrica_partida_direta_reversora.jpg" width="500px">
             </div>
             <br><br>
-            <h2>Exercício Prático ( Partida Direta Reversora ) - Laboratório Elétrica ( Senai - CAD SIMU )</h2>
+            <h2>Exercício Prático ( Partida Direta Reversora ) - Laboratório Elétrica ( Senai - CADe SIMU )</h2>
             <br>
             <div>
-                <video src="../video/diagrama_atividade_pratica_prof_no_lab_eletrica_partida_direta_reversora_cad_simu.mp4" type="video/mp4" controls  width="1100px"></video>
+                <video src="../video/diagrama_atividade_pratica_prof_no_lab_eletrica_partida_direta_reversora_cad_simu.mp4" type="video/mp4" controls width="1100px"></video>
             </div>
             <br><br>
-            <h2>Descrição</h2>
+            <h2>Funcionamento:</h2>
             <br>
-            <p></p>
+            <p>O circuito integra um circuito de comando alimentado em corrente alternada (CA), utilizando alimentação fase-fase, a um circuito de potência responsável pelo acionamento de um motor trifásico com reversão do sentido de rotação (M1). Conforme o diagrama, o circuito utiliza um disjuntor termomagnético trifásico (D2), um disjuntor termomagnético bifásico (D1), dois contatores (K1 e K2), um relé térmico (F1), dois botões de parada normalmente fechados (B0 e B2), dois botões de partida normalmente abertos (B1 e B3) e contatos auxiliares responsáveis pelo contato de selo e pelo intertravamento elétrico.</p>
+            <br>
+            <p>Diferentemente das práticas anteriores realizadas no CADe SIMU, nas quais o circuito de comando era alimentado em 24 Vdc, nesta montagem a alimentação é feita entre duas fases da rede trifásica (fase-fase).</p>
+            <br>
+            <p>Após acionar a chave seletora / manopla (presente na bancada física) e ligar os disjuntores D1 e D2, o circuito é energizado. Em repouso, as bobinas dos contatores permanecem desenergizadas, seus contatos permanecem em suas posições normais e o motor permanece desligado.</p>
+            <br>
+            <p>Antes de realizar qualquer acionamento, é recomendado que uma pessoa fique responsável pelo comando do circuito enquanto outra permaneça próxima ao botão de emergência, permitindo a interrupção imediata da alimentação caso ocorra alguma ligação incorreta, curto-circuito, cheiro de queimado ou qualquer outra situação anormal.</p>
+            <br>
+            <p>Ao pressionar o botão de partida B1, a corrente percorre o circuito através do contato normalmente fechado do relé térmico (95-96), do botão de parada B0 e do contato normalmente fechado de K2 (21-22), energizando a bobina do contator K1. Como consequência, o contato auxiliar 13-14 realiza o contato de selo, os contatos principais fecham o circuito de potência e o motor passa a girar no sentido horário.</p>
+            <br>
+            <p>Para inverter o sentido de rotação, o circuito deve ser desligado e, em seguida, o botão de partida B3 deve ser pressionado. A corrente percorre o circuito através do contato normalmente fechado do relé térmico (95-96), do botão de parada B2 e do contato normalmente fechado de K1 (21-22), energizando a bobina do contator K2. Os contatos principais fecham o circuito de potência conforme a configuração de reversão apresentada no diagrama, fazendo com que o motor inicie a rotação no sentido anti-horário, enquanto o intertravamento elétrico impede a energização simultânea dos dois contatores.</p>
+            <br>
+            <p>Ao pressionar o botão de parada correspondente (B0 ou B2), ou caso seja necessário utilizar o botão de emergência da bancada durante a prática, a bobina do contator energizado é desenergizada, os contatos retornam às suas posições normais, o circuito de potência é interrompido, desligando o motor e retornando o circuito ao estado inicial.</p>
             <br>
         </div>
         <br><br>
