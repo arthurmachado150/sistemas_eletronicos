@@ -40,6 +40,9 @@
         
         <div class="fundo_geral">
             <br>
+            <h2>Operações lógicas de bits (Bit logic operations)</h2>
+            <br>
+            
             <div class="fundo_geral_02">
                 <br>
                 <h3>Contato NA em Ladder</h3>
@@ -56,8 +59,8 @@
             <br><br>
             <hr>
             <br><br>
-        
-        
+            
+            
             <div class="fundo_geral_02">
                 <br>
                 <h3>Contato NF em Ladder</h3>
@@ -74,8 +77,8 @@
             <br><br>
             <hr>
             <br><br>
-        
-        
+            
+            
             <div class="fundo_geral_02">
                 <br>
                 <h3>Bobina em Ladder</h3>
@@ -92,8 +95,8 @@
             <br><br>
             <hr>
             <br><br>
-        
-        
+            
+            
             <div class="fundo_geral_02">
                 <br>
                 <h3>Bobina Set em Ladder</h3>
@@ -110,8 +113,8 @@
             <br><br>
             <hr>
             <br><br>
-        
-        
+            
+            
             <div class="fundo_geral_02">
                 <br>
                 <h3>Bobina Reset em Ladder</h3>
@@ -126,36 +129,63 @@
                 <br>
             </div>
             <br>
-        </div>
-        
 
-
-        <div class="fundo_geral">
-            <br>
-            <h2>TON (Timer On Delay - Atraso na Energização) em Ladder</h2>
-            <br>
-            <div>
-                <img src="../img/ton_tia_portal.jpg" width="500px">
-            </div>
-            <br>
-            <p>É um temporizador utilizado para esperar um número definido de segundos, milissegundos, etc... após ser energizado para permitir a passagem de energia após o Contato NA ser acionado ou NF ser mantido em seu estado.</p>
-            <br>
         </div>
         <br><br>
         <hr>
         <br><br>
-
+        
 
         <div class="fundo_geral">
             <br>
-            <h2>TOF (Timer Off Delay - Atraso na Desenergização) em Ladder</h2>
+            <h2>Operações de temporizadores (Timer operations)</h2>
             <br>
-            <div>
-                <img src="../img/tof_tia_portal.jpg" width="500px">
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>TON (Timer On Delay - Atraso na Energização) em Ladder</h3>
+                <br>
+                <div>
+                    <img src="../img/ton_tia_portal.jpg" width="500px">
+                </div>
+                <br>
+                <p>É um temporizador utilizado para esperar um número definido de segundos, milissegundos, etc... após ser energizado para permitir a passagem de energia após o Contato NA ser acionado ou NF ser mantido em seu estado.</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>TOF (Timer Off Delay - Atraso na Desenergização) em Ladder</h3>
+                <br>
+                <div>
+                    <img src="../img/tof_tia_portal.jpg" width="500px">
+                </div>
+                <br>
+                <p>É o oposto do TON, pois é um temporizador utilizado para esperar um número definido de segundos, milissegundos, etc... após ser desenergizado para impedir a passagem de energia após o Contato NA ser desativado ou NF ser acionado.</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>TP (Timer Pulse - Temporizador de Pulso) em Ladder</h3>
+                <br>
+                <div>
+                    <img src="../img/tp_tia_portal.jpg" width="500px">
+                </div>
+                <br>
+                <p>É um temporizador utilizado para gerar uma saída ativa por um período de tempo predefinido exato. Assim que recebe um pulso na entrada, a sua saída é ligada e o tempo começa a contar, permanecendo ativa mesmo que o sinal de entrada seja desativado antes do tempo terminar. Após o fim do tempo programado, a saída desliga automaticamente.</p>
+                <br>
             </div>
             <br>
-            <p>É o oposto do TON, pois é um temporizador utilizado para esperar um número definido de segundos, milissegundos, etc... após ser desenergizado para impedir a passagem de energia após o Contato NA ser desativado ou NF ser acionado.</p>
-            <br>
+            
         </div>
         <br><br>
         <hr>
@@ -164,14 +194,54 @@
         
         <div class="fundo_geral">
             <br>
-            <h2>TP (Timer Pulse - Temporizador de Pulso) em Ladder</h2>
+            <h2>Operações de contagem (Counter operations)</h2>
             <br>
-            <div>
-                <img src="../img/tp_tia_portal.jpg" width="500px">
+
+            <div class="fundo_geral_02">
+                <br>
+                <h3>CTU (Count Up - Contador Crescente) em Ladder</h3>
+                <br>
+                <div>
+                    <img src="../img/ctu_tia_portal.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de contagem utilizada para incrementar (somar) uma unidade ao seu valor acumulado interno toda vez que a sua entrada de contagem recebe uma transição de sinal (borda de subida). Quando o valor acumulado atingir o valor limite predefinido, sua saída lógica é ligada, permanecendo assim até que a entrada de Reset seja acionada para zerar o contador.</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>CTD (Count Down - Contador Decrescente) em Ladder</h3>
+                <br>
+                <div>
+                    <img src="../img/ctd_tia_portal.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de contagem utilizada para decrementar (subtrair) uma unidade de seu valor acumulado interno a cada transição de sinal em sua entrada de contagem. É frequentemente associado ao carregamento de um valor inicial e realiza a contagem regressiva em direção a zero ou ao limite configurado para ativar sua saída lógica.</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>CTUD (Count Up/Down - Contador Crescente/Decrescente) em Ladder</h3>
+                <br>
+                <div>
+                    <img src="../img/ctud_tia_portal.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de contagem bidirecional utilizada para incrementar ou decrementar o seu valor acumulado interno de acordo com a entrada acionada. Ela possui duas entradas de contagem distintas: uma para somar uma unidade (borda de subida em CU) e outra para subtrair uma unidade (borda de subida em CD). Sua saída de limite superior (QU) é ligada quando o valor acumulado atinge ou supera o valor limite predefinido (PV), enquanto sua saída de limite inferior (QD) é ligada quando o valor acumulado é menor ou igual a zero, possuindo ainda entradas dedicadas para zerar o acumulador (Reset - R) ou carregá-lo diretamente com o valor limite (Load - LD).</p>
+                <br>
             </div>
             <br>
-            <p>É um temporizador utilizado para gerar uma saída ativa por um período de tempo predefinido exato. Assim que recebe um pulso na entrada, a sua saída é ligada e o tempo começa a contar, permanecendo ativa mesmo que o sinal de entrada seja desativado antes do tempo terminar. Após o fim do tempo programado, a saída desliga automaticamente.</p>
-            <br>
+            
         </div>
         <br><br>
         <hr>
@@ -180,147 +250,107 @@
         
         <div class="fundo_geral">
             <br>
-            <h2>CTU (Count Up - Contador Crescente) em Ladder</h2>
+            <h2>Operações de comparadores (Comparator operations)</h2>
             <br>
-            <div>
-                <img src="../img/ctu_tia_portal.jpg" width="500px">
+
+            <div class="fundo_geral">
+                <br>
+                <h3>EQ (Equal - Igual a) em Ladder (==)</h3>
+                <br>
+                <div>
+                    <img src="../img/tia_portal_cmp_igual.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de comparação utilizada para verificar se dois valores são exatamente iguais. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se as duas variáveis possuírem o mesmo valor, a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung) para ativar a sua saída ou as instruções seguintes.</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral">
+                <br>
+                <h3>NE (Not Equal - Diferente de) em Ladder (<>)</h3>
+                <br>
+                <div>
+                    <img src="../img/tia_portal_cmp_diferente.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de comparação utilizada para verificar se dois valores são distintos. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se as duas variáveis possuírem valores diferentes, a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung) para ativar a sua saída ou as instruções seguintes.</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral">
+                <br>
+                <h3>GT (Greater Than - Maior que) em Ladder (>)</h3>
+                <br>
+                <div>
+                    <img src="../img/tia_portal_cmp_maior.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de comparação utilizada para determinar se um valor é estritamente maior que outro. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se o valor da primeira entrada for maior que o da segunda (IN1 > IN2), a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung).</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral">
+                <br>
+                <h3>GE (Greater Than or Equal - Maior ou igual a) em Ladder (>=)</h3>
+                <br>
+                <div>
+                    <img src="../img/tia_portal_cmp_maior_ou_igual.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de comparação utilizada para determinar se um valor é maior ou igual a outro. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se o valor da primeira entrada for maior ou exatamente igual ao da segunda (IN1 >= IN2), a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung).</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral">
+                <br>
+                <h3>LT (Less Than - Menor que) em Ladder (<)</h3>
+                <br>
+                <div>
+                    <img src="../img/tia_portal_cmp_menor.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de comparação utilizada para determinar se um valor é estritamente menor que outro. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se o valor da primeira entrada for menor que o da segunda (IN1 < IN2), a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung).</p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            
+            <div class="fundo_geral">
+                <br>
+                <h3>LE (Less Than or Equal - Menor ou igual a) em Ladder (<=)</h3>
+                <br>
+                <div>
+                    <img src="../img/tia_portal_cmp_menor_ou_igual.jpg" width="500px">
+                </div>
+                <br>
+                <p>É uma instrução de comparação utilizada para determinar se um valor é menor ou igual a outro. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se o valor da primeira entrada for menor ou exatamente igual ao da segunda (IN1 <= IN2), a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung).</p>
+                <br>
             </div>
             <br>
-            <p>É uma instrução de contagem utilizada para incrementar (somar) uma unidade ao seu valor acumulado interno toda vez que a sua entrada de contagem recebe uma transição de sinal (borda de subida). Quando o valor acumulado atingir o valor limite predefinido, sua saída lógica é ligada, permanecendo assim até que a entrada de Reset seja acionada para zerar o contador.</p>
-            <br>
+
         </div>
         <br><br>
         <hr>
         <br><br>
-        
-        
-        <div class="fundo_geral">
-            <br>
-            <h2>CTD (Count Down - Contador Decrescente) em Ladder</h2>
-            <br>
-            <div>
-                <img src="../img/ctd_tia_portal.jpg" width="500px">
-            </div>
-            <br>
-            <p>É uma instrução de contagem utilizada para decrementar (subtrair) uma unidade de seu valor acumulado interno a cada transição de sinal em sua entrada de contagem. É frequentemente associado ao carregamento de um valor inicial e realiza a contagem regressiva em direção a zero ou ao limite configurado para ativar sua saída lógica.</p>
-            <br>
-        </div>
-        <br><br>
-        <hr>
-        <br><br>
-        
-        
-        <div class="fundo_geral">
-            <br>
-            <h2>CTUD (Count Up/Down - Contador Crescente/Decrescente) em Ladder</h2>
-            <br>
-            <div>
-                <img src="../img/ctud_tia_portal.jpg" width="500px">
-            </div>
-            <br>
-            <p>É uma instrução de contagem bidirecional utilizada para incrementar ou decrementar o seu valor acumulado interno de acordo com a entrada acionada. Ela possui duas entradas de contagem distintas: uma para somar uma unidade (borda de subida em CU) e outra para subtrair uma unidade (borda de subida em CD). Sua saída de limite superior (QU) é ligada quando o valor acumulado atinge ou supera o valor limite predefinido (PV), enquanto sua saída de limite inferior (QD) é ligada quando o valor acumulado é menor ou igual a zero, possuindo ainda entradas dedicadas para zerar o acumulador (Reset - R) ou carregá-lo diretamente com o valor limite (Load - LD).</p>
-            <br>
-        </div>
-        <br><br>
-        <hr>
-        <br><br>
-        
-        
-        <div class="fundo_geral">
-            <br>
-            <h2>EQ (Equal - Igual a) em Ladder (==)</h2>
-            <br>
-            <div>
-                <img src="../img/tia_portal_cmp_igual.jpg" width="500px">
-            </div>
-            <br>
-            <p>É uma instrução de comparação utilizada para verificar se dois valores são exatamente iguais. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se as duas variáveis possuírem o mesmo valor, a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung) para ativar a sua saída ou as instruções seguintes.</p>
-            <br>
-        </div>
-        <br><br>
-        <hr>
-        <br><br>
-        
-        
-        <div class="fundo_geral">
-            <br>
-            <h2>NE (Not Equal - Diferente de) em Ladder (<>)</h2>
-            <br>
-            <div>
-                <img src="../img/tia_portal_cmp_diferente.jpg" width="500px">
-            </div>
-            <br>
-            <p>É uma instrução de comparação utilizada para verificar se dois valores são distintos. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se as duas variáveis possuírem valores diferentes, a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung) para ativar a sua saída ou as instruções seguintes.</p>
-            <br>
-        </div>
-        <br><br>
-        <hr>
-        <br><br>
-        
-        
-        <div class="fundo_geral">
-            <br>
-            <h2>GT (Greater Than - Maior que) em Ladder (>)</h2>
-            <br>
-            <div>
-                <img src="../img/tia_portal_cmp_maior.jpg" width="500px">
-            </div>
-            <br>
-            <p>É uma instrução de comparação utilizada para determinar se um valor é estritamente maior que outro. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se o valor da primeira entrada for maior que o da segunda (IN1 > IN2), a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung).</p>
-            <br>
-        </div>
-        <br><br>
-        <hr>
-        <br><br>
-        
-        
-        <div class="fundo_geral">
-            <br>
-            <h2>GE (Greater Than or Equal - Maior ou igual a) em Ladder (>=)</h2>
-            <br>
-            <div>
-                <img src="../img/tia_portal_cmp_maior_ou_igual.jpg" width="500px">
-            </div>
-            <br>
-            <p>É uma instrução de comparação utilizada para determinar se um valor é maior ou igual a outro. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se o valor da primeira entrada for maior ou exatamente igual ao da segunda (IN1 >= IN2), a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung).</p>
-            <br>
-        </div>
-        <br><br>
-        <hr>
-        <br><br>
-        
-        
-        <div class="fundo_geral">
-            <br>
-            <h2>LT (Less Than - Menor que) em Ladder (<)</h2>
-            <br>
-            <div>
-                <img src="../img/tia_portal_cmp_menor.jpg" width="500px">
-            </div>
-            <br>
-            <p>É uma instrução de comparação utilizada para determinar se um valor é estritamente menor que outro. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se o valor da primeira entrada for menor que o da segunda (IN1 < IN2), a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung).</p>
-            <br>
-        </div>
-        <br><br>
-        <hr>
-        <br><br>
-        
-        
-        <div class="fundo_geral">
-            <br>
-            <h2>LE (Less Than or Equal - Menor ou igual a) em Ladder (<=)</h2>
-            <br>
-            <div>
-                <img src="../img/tia_portal_cmp_menor_ou_igual.jpg" width="500px">
-            </div>
-            <br>
-            <p>É uma instrução de comparação utilizada para determinar se um valor é menor ou igual a outro. Ela compara o valor de uma primeira entrada (IN1 ou Source A) com o de uma segunda entrada (IN2 ou Source B); se o valor da primeira entrada for menor ou exatamente igual ao da segunda (IN1 <= IN2), a instrução torna-se verdadeira, permitindo a passagem do fluxo lógico na linha (rung).</p>
-            <br>
-        </div>
-        <br><br>
-        <hr>
-        <br><br>
-        
+
         
         <div class="fundo_geral">
             <br>
