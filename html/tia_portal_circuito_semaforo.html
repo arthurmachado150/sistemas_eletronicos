@@ -13,14 +13,14 @@
             <a href="./componentes.html"> Componentes </a>
             <a href="./simulacoes.html"> Simulações e Diagramas </a>
             <a href="./tia_portal_conceitos.html"> TIA Portal V20 - Conceitos em Ladder </a>
-            <a href="./tia_portal_circuito_semaforo.html"> TIA Portal V20 - Circuito Semáforo Sequencial </a>
+            <a href="./tia_portal_circuito_semaforo.html"> TIA Portal V20 - Configurações e Circuito Semáforo Sequencial </a>
             <a href="./tia_portal_passo_a_passo.html"> TIA Portal V20 - Passo a Passo </a>
             <a href="./simulacao_pratica_painel.html"> Simulação Prática no Painel/Bancada </a>
             <a href="./conclusao.html"> Conclusão </a>
         </nav>
     </header>
     <main>
-        <h1>TIA Portal V20 - Circuito Semáforo Sequencial</h1>
+        <h1>Configurações TIA Portal V20 e Circuito Semáforo Sequencial</h1>
         <br><br>
 
 
@@ -29,16 +29,17 @@
             <h2>Configuração do Dispositivo (Device Configuration)</h2>
             <br>
             <div class="fundo_geral_02">
+                <br>
                 <h3>Antes da Tabela de Variáveis (Default Tag Table)</h3>
                 <br>
                 <div>
-                    <img src="../img/tia_portal_device_config_plc_antes.jpg" width="1100px">
+                    <img src="../img/tia_portal_device_config_plc_antes.jpg" width="1540px">
                 </div>
                 <br><br>
                 <h3>Depois da Tabela de Variáveis (Default Tag Table)</h3>
                 <br>
                 <div>
-                    <img src="../img/tia_portal_device_config_plc_depois.jpg" width="1100px">
+                    <img src="../img/tia_portal_device_config_plc_depois.jpg" width="1540px">
                 </div>
                 <br><br>
             </div>
@@ -60,7 +61,7 @@
             <h2>Tabela de Variáveis (Default Tag Table)</h2>
             <br>
             <div>
-                <img src="../img/tia_portal_default_tag.jpg" width="1100px">
+                <img src="../img/tia_portal_default_tag.jpg" width="1540px">
             </div>
             <br><br>
             <h2>Por quê / Função de usar a Tag Table</h2>
@@ -77,14 +78,14 @@
 
         <div class="fundo_geral">
             <br>
-            <h2>Bloco Principal (OB1)</h2>
+            <h2>Bloco Principal / Bloco de Organização (OB1)</h2>
             <br>
             <div>
                 <img src="../img/ob1.jpg" width="500px">
             </div>
             <br><br>
             <div>
-                <img src="../img/tia_portal_ob1.jpg" width="1100px">
+                <img src="../img/tia_portal_ob1.jpg" width="1540px">
             </div>
             <br><br>
             <h2>Por quê / Função de usar o OB1</h2>
@@ -108,11 +109,11 @@
             </div>
             <br><br>
             <div>
-                <img src="../img/tia_portal_fb_parte_01.jpg" width="1100px"><br><br>
-                <img src="../img/tia_portal_fb_parte_02.jpg" width="1100px"><br><br>
-                <img src="../img/tia_portal_fb_parte_03.jpg" width="1100px"><br><br>
-                <img src="../img/tia_portal_fb_parte_04.jpg" width="1100px"><br><br>
-                <img src="../img/tia_portal_fb_parte_05.jpg" width="1100px">
+                <img src="../img/tia_portal_fb_parte_01.jpg" width="1540px"><br><br>
+                <img src="../img/tia_portal_fb_parte_02.jpg" width="1540px"><br><br>
+                <img src="../img/tia_portal_fb_parte_03.jpg" width="1540px"><br><br>
+                <img src="../img/tia_portal_fb_parte_04.jpg" width="1540px"><br><br>
+                <img src="../img/tia_portal_fb_parte_05.jpg" width="1540px">
             </div>
             <br><br>
             <h2>Por quê / Função de usar um Bloco FB</h2>
@@ -121,6 +122,49 @@
             <br>
             <p><strong>Por quê usar FB:</strong> O controle de um semáforo depende fortemente de temporizadores (que precisam guardar o tempo já percorrido) e da retenção de estados (saber exatamente qual luz está acesa no momento). O <em>Function Block (FB)</em> é a escolha ideal na programação CLP porque ele retém essas informações na memória sem perder os dados. Além disso, deixa o bloco principal (OB1) muito mais limpo e permite que a mesma lógica seja reaproveitada facilmente (se você quisesse adicionar um segundo semáforo, bastaria chamar o FB1 novamente criando um novo Data Block, sem misturar as temporizações).</p>
             <br>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+
+
+        <div class="fundo_geral">
+            <br>
+            <h2>Simulação Semáforo Sequencial</h2>
+            <br>
+            <div class="fundo_geral_02">
+                <br>
+                <h3>No Bloco de Função (FB1)</h3>
+                <br>
+                <div>
+                    <video src="../video/simulacao_semaforo_sequencial_fb.mp4" type="video/mp4" controls width="1540px"></video>
+                </div>
+                <br><br>
+                <h3>Funcionamento</h3>
+                <br>
+                <p></p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>No Bloco Principal / Bloco de Organização (OB1)</h3>
+                <br>
+                <div>
+                    <video src="../video/simulacao_semaforo_sequencial_ob.mp4" type="video/mp4" controls width="1540px"></video>
+                </div>
+                <br><br>
+                <h3>Funcionamento</h3>
+                <br>
+                <p></p>
+                <br>
+            </div>
+            <br><br>
+            <hr>
+            <br><br>
         </div>
         <br><br>
         <hr>
