@@ -34,7 +34,7 @@
                 <h3>Programa no TIA Portal V20</h3>
                 <br>
                 <div>
-                    <video src="../video/teste_entradas_saidas_clp_no_painel_com_programa_tia_portal.mp4" type="video/mp4" controls width="1100px"></video>
+                    <video src="../video/teste_entradas_saidas_clp_no_painel_com_programa_tia_portal.mp4" type="video/mp4" controls width="1540px"></video>
                 </div>
                 <br>
             </div>
@@ -47,7 +47,7 @@
                 <h3>Simulação no Painel Físico com CLP</h3>
                 <br>
                 <div>
-                    <video src="../video/teste_entradas_saidas_clp_no_painel_com_programa.mp4" type="video/mp4" controls width="1100px"></video>
+                    <video src="../video/teste_entradas_saidas_clp_no_painel_com_programa.mp4" type="video/mp4" controls width="510px"></video>
                 </div>
                 <br>
             </div>
@@ -57,7 +57,15 @@
 
             <h2>Funcionamento</h2>
             <br>
-            <p></p>
+            <p>O sistema é composto por um Controlador Lógico Programável (CLP) Siemens SIMATIC S7-1200, configurado no software TIA Portal, e interligado a um painel didático de testes. Este painel contém chaves tipo alavanca para simular as entradas digitais — com a particularidade de que, ao serem acionadas para a direita, atuam com retenção (como chaves seletoras) e, para a esquerda, atuam sem retenção (como botões de pulso/push button) —, além de indicadores luminosos/LEDs para monitorar as saídas digitais. No software, o programa em linguagem Ladder foi desenvolvido estabelecendo uma relação direta entre cada entrada e saída: cada contato normalmente aberto de entrada (ex: %I0.0) está ligado diretamente a uma bobina de saída correspondente (ex: %Q0.0).</p>
+            <br>
+            <p>Durante a execução e teste no painel físico, o operador aciona individualmente as alavancas do módulo de entradas. Ao mudar o estado da alavanca (seja de forma retentiva mantendo-a à direita, ou dando um pulso à esquerda), um sinal elétrico é enviado para a respectiva entrada do CLP. O processador executa a lógica programada e ativa instantaneamente a saída digital vinculada a ela, acendendo o respectivo LED no módulo de saídas. Ao soltar a alavanca (no modo botão) ou retorná-la à posição central (no modo seletora), o sinal é cortado e o LED se apaga, comprovando o funcionamento e o endereçamento correto de todos os pontos de Entrada/Saída (I/O) do hardware.</p>
+            <br>
+            <br><br>
+            
+            <h2>Observação</h2>
+            <br>
+            <p>No laboratório prático, as entradas digitais %I0.0, %I0.1, %I0.2 e %I0.3, não acionaram suas respectivas saídas digitais.</p>
             <br>
         </div>
         <br><br>
@@ -75,7 +83,7 @@
                 <h3>Programa no TIA Portal V20</h3>
                 <br>
                 <div>
-                    <video src="../video/circuito_sinaleira_com_bobina_set_e_reset_painel_clp_tia_portal.mp4" type="video/mp4" controls width="1100px"></video>
+                    <video src="../video/circuito_sinaleira_com_bobina_set_e_reset_painel_clp_tia_portal.mp4" type="video/mp4" controls width="1540px"></video>
                 </div>
                 <br>
             </div>
@@ -88,7 +96,7 @@
                 <h3>Simulação no Painel Físico com CLP</h3>
                 <br>
                 <div>
-                    <video src="../video/circuito_sinaleira_com_bobina_set_e_reset_painel_clp.mp4" type="video/mp4" controls width="1100px"></video>
+                    <video src="../video/circuito_sinaleira_com_bobina_set_e_reset_painel_clp.mp4" type="video/mp4" controls width="510px"></video>
                 </div>
                 <br>
             </div>
@@ -98,7 +106,79 @@
 
             <h2>Funcionamento</h2>
             <br>
-            <p></p>
+            <p>O sistema é composto por um Controlador Lógico Programável (CLP) Siemens SIMATIC S7-1200 interligado a um painel didático de testes e configurado através do software TIA Portal. O programa foi desenvolvido em linguagem Ladder utilizando blocos de temporização (TON) e bobinasa de Set (S) e Reset (R) para criar uma rotina sequencial típica de uma sinaleira (semáforo). O circuito controla três saídas digitais: <strong>led_verde (%Q0.0)</strong>, <strong>led_vermelho (%Q0.1)</strong> e <strong>led_amarelo (%Q0.2)</strong>, sendo todo o ciclo condicionado pela entrada digital "chave_liga_desliga (%I0.0)" (%I0.0).</p>
+            <br>
+            <p>A estrutura lógica foi dividida em cinco Networks principais:</p>
+            <br>
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 1 (partida do ciclo)</h3>
+                <br>
+                <p>Possui o contato NA da chave_liga_desliga (%I0.0) em série com o contato NF do temporizador_03. Quando a chave é ligada, essa primeira linha Seta o led_verde (%Q0.0) e aplica o Reset nos demais (Vermelho e Amarelo), garantindo a inicialização correta.</p>
+                <br>
+            </div>
+            <br><br>
+
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 2</h3>
+                <br>
+                <p>Atua como linha de segurança para desenergização geral. Ela utiliza um contato NF direto da chave_liga_desliga (%I0.0); assim, se a chave for desligada no painel, este contato volta a conduzir energia e envia imediatamente um comando de Reset global para apagar os três LEDs simultaneamente.</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 3</h3>
+                <br>
+                <p>É responsável pela primeira transição. Ela utiliza um contato NA acionado pelo led_verde (%Q0.0) para energizar o temporizador_01. Ao final do tempo deste bloco, ele executa os comandos: Reseta o led_verde (%Q0.0), Seta o led_vermelho (%Q0.1) e Reseta o led_amarelo (%Q0.2).</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 4</h3>
+                <br>
+                <p>Gerencia a segunda transição da sequência. Um contato NA acionado pelo led_vermelho (%Q0.1) energiza o temporizador_02. Ao concluir sua contagem, este temporizador Reseta o led_verde (%Q0.0), Reseta o led_vermelho (%Q0.1) e Seta o led_amarelo (%Q0.2).</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 5</h3>
+                <br>
+                <p>Cuida do fim da sequência. Nela, um contato NA acionado pelo led_amarelo (%Q0.2) energiza o temporizador_03. Ao concluir sua contagem, este temporizador Reseta o led_verde (%Q0.0), Reseta o led_vermelho (%Q0.1) e Reseta o led_amarelo (%Q0.2).</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Loop</h3>
+                <br>
+                <p>O ciclo contínuo (loop) do semáforo acontece devido à interação direta entre a Network 5 e a Network 1. Quando o tempo do temporizador_03 acaba, o pulso gerado apaga o led_amarelo (%Q0.2) e, simultaneamente, abre muito rapidamente o seu próprio contato NF posicionado na Network 1, cortando o sinal da linha de partida.</p>
+                <br>
+                <p>Com o led_amarelo (%Q0.2) apagado, o temporizador_03 perde sua alimentação e desliga. Isso faz com que o contato NF na Network 1 volte a se fechar instantaneamente. Como a chave principal é mantida ligada (com retenção) no painel físico, a energia volta a fluir livremente pela Network 1, disparando novamente o comando inicial de "Setar" o Verde.</p>
+                <br>
+                <p>Esse processo repete a sequência luminosa em um ciclo sem fim. Todo o sistema só é interrompido quando o operador retorna a alavanca seletora para a posição central, cortando a alimentação e ativando a linha de desenergização (Network 2) que apaga completamente a sinaleira.</p>
+                <br>
+            </div>
+            <br>
+
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Teste Físico no Painel</h3>
+                <br>
+                <p>Durante a execução no painel físico, o operador aciona a chave tipo alavanca correspondente à entrada <strong>chave_liga_desliga (%I0.0)</strong>, atuando com retenção (como uma chave seletora). Imediatamente, o sinal elétrico é enviado ao CLP, que processa a lógica e ativa o respectivo LED indicador no módulo de saídas, acendendo o <strong>led_verde (%Q0.0)</strong>.</p>
+                <br>
+                <p>Com a chave mantida acionada, o operador observa a transição automática da sinaleira no painel: os indicadores luminosos trocam de estado sequencialmente conforme os temporizadores concluem suas contagens, passando do verde para o vermelho, depois para o amarelo, e reiniciando o ciclo de forma ininterrupta.</p>
+                <br>
+                <p>Esse processo repete a sequência luminosa em um ciclo sem fim. Todo o sistema só é interrompido quando o operador retorna a alavanca seletora para a posição central. Nesse momento, o sinal de entrada é cortado, ativando a linha de desenergização (Network 2), o que envia um comando de Reset global que apaga todos os LEDs do painel simultaneamente.</p>
+                <br>
+            </div>
             <br>
         </div>
         <br><br>
@@ -116,7 +196,7 @@
                 <h3>Programa no TIA Portal V20</h3>
                 <br>
                 <div>
-                    <video src="../video/circuito_simples_teste_sensor_indutivo_uma_entrada_contato_na_uma_saida_bobina_painel_clp_tia_portal.mp4" type="video/mp4" controls width="1100px"></video>
+                    <video src="../video/circuito_simples_teste_sensor_indutivo_uma_entrada_contato_na_uma_saida_bobina_painel_clp_tia_portal.mp4" type="video/mp4" controls width="1540px"></video>
                 </div>
                 <br>
             </div>
@@ -129,7 +209,7 @@
                 <h3>Simulação no Painel Físico com CLP</h3>
                 <br>
                 <div>
-                    <video src="../video/circuito_simples_teste_sensor_indutivo_uma_entrada_contato_na_uma_saida_bobina_painel_clp.mp4" type="video/mp4" controls width="1100px"></video>
+                    <video src="../video/circuito_simples_teste_sensor_indutivo_uma_entrada_contato_na_uma_saida_bobina_painel_clp.mp4" type="video/mp4" controls width="510px"></video>
                 </div>
                 <br>
             </div>
@@ -139,7 +219,16 @@
 
             <h2>Funcionamento</h2>
             <br>
-            <p></p>
+            <p>O sistema é composto por um Controlador Lógico Programável (CLP) Siemens SIMATIC S7-1200, configurado no software TIA Portal, e interligado a um painel didático de testes. No software, o programa em linguagem Ladder foi desenvolvido estabelecendo uma relação direta, simples e sem retenção entre a entrada e a saída: o contato normalmente aberto (NA) associado à variável "sensor_indutivo" (%I0.0) está ligado diretamente a uma bobina simples de saída associada à variável "saida_bobina_clp" (%Q0.0).</p>
+            <br>
+            <p>Durante a execução e teste no painel físico, o operador segura o sensor indutivo e o aproxima de uma superfície ou objeto metálico. Ao detectar a presença do metal, o sensor altera seu estado e envia um sinal elétrico contínuo para a entrada do CLP (%I0.0). O processador executa a lógica programada, fechando o contato virtual e ativando instantaneamente a bobina da saída digital vinculada a ela, o que acende o respectivo LED indicador no módulo de saídas (indicador Q0).</p>
+            <br>
+            <p>Ao afastar o sensor do objeto metálico, a detecção é interrompida e o sinal elétrico é cortado. O contato virtual no programa Ladder se abre e a bobina de saída é desenergizada instantaneamente, apagando o LED. Esse processo comprova o funcionamento direto e em tempo real do acionamento de uma carga externa através da leitura de um sensor industrial, refletindo fielmente o estado da entrada na saída correspondente sem a necessidade de comandos de retenção.</p>
+            <br><br>
+            
+            <h2>Observação</h2>
+            <br>
+            <p>No laboratório prático, a variável "sensor_indutivo" estava como (%I0.1) e a variável "saida_bobina_clp" como (%Q0.4).</p>
             <br>
         </div>
         <br><br>
