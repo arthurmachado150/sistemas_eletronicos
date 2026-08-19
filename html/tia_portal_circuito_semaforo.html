@@ -139,16 +139,10 @@
                 <div>
                     <video src="../video/simulacao_semaforo_sequencial_fb.mp4" type="video/mp4" controls width="1540px"></video>
                 </div>
-                <br><br>
-                <h3>Funcionamento</h3>
-                <br>
-                <p></p>
                 <br>
             </div>
             <br><br>
-            <hr>
-            <br><br>
-            
+
             <div class="fundo_geral_02">
                 <br>
                 <h3>No Bloco Principal / Bloco de Organização (OB1)</h3>
@@ -156,15 +150,106 @@
                 <div>
                     <video src="../video/simulacao_semaforo_sequencial_ob.mp4" type="video/mp4" controls width="1540px"></video>
                 </div>
-                <br><br>
-                <h3>Funcionamento</h3>
-                <br>
-                <p>oi</p>
                 <br>
             </div>
             <br><br>
             <hr>
             <br><br>
+            
+            <h2>Funcionamento</h2>
+            <br>
+            <p>O programa foi estruturado para execução no Controlador Lógico Programável (CLP) Siemens SIMATIC S7-1200 (CPU 1215C DC/DC/DC). No Bloco do Programa Principal <strong>Main [OB1]</strong>, é feita a chamada do Bloco de Função <strong>processo_sinaleira [FB1]</strong> através do seu Bloco de Dados de Instância <strong>processo_sinaleira_DB [%DB1]</strong>. A arquitetura possui total compatibilidade para ser carregada em hardware real, porém foi testada e validada exclusivamente em ambiente de simulação virtual com o TIA Portal e o S7-PLCSIM.</p>
+            <br>
+            <br>
+            <p>No <strong>OB1 (Network 1)</strong>, as tags globais do CLP estão mapeadas diretamente nas entradas e saídas do bloco FB1:</p>
+            <br>
+            <p>•  <strong>Entradas:</strong> A variável <strong>"botao_liga" (%I0.1)</strong> está conectada à entrada btn_liga e a variável <strong>"botao_desliga" (%I0.0)</strong> está conectada à entrada btn_desliga.</p>
+            <br>
+            <p>•  <strong>Status do Processo:</strong> O pino de saída proc_ativo atualiza a memória de sinalização <strong>"processo_ativo" (%M10.0)</strong>.</p>
+            <br>
+            <p>•  <strong>Saídas Digitais:</strong> Os pinos de comando acionam as saídas <strong>"led_verde" (%Q0.0)</strong> via ld_verde, <strong>"led_amarelo" (%Q0.1)</strong> via ld_amarelo e <strong>"led_vermelho" (%Q0.2)</strong> via ld_vermelho.</p>
+            <br>
+            <br>
+            <p>A lógica interna encapsulada no Bloco de Função (FB1) está dividida em seis Networks principais:</p>
+            <br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 1 (partida do processo)</h3>
+                <br>
+                <p>Possui o contato NA da entrada btn_liga (%I0.1). Ao receber o sinal do "botao_liga", esta linha aciona a bobina de Set (S) da variável proc_ativo, memorizando o estado no bit "processo_ativo" (%M10.0) e autorizando a execução do ciclo automático.</p>
+                <br>
+            </div>
+            <br><br>
+
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 2 (desligamento e reset geral)</h3>
+                <br>
+                <p>Atua como linha de segurança e parada. Ao receber o acionamento do "botao_desliga" (%I0.0) na entrada btn_desliga, esta network executa comandos de Reset (R) em paralelo para desativar a memória proc_ativo (%M10.0) e desligar simultaneamente todas as saídas de sinalização (ld_verde, ld_amarelo e ld_vermelho).</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 3 (inicialização - fase verde)</h3>
+                <br>
+                <p>Com a variável proc_ativo energizada e a condução mantida pelo contato NF do temporizador final (#T3.Q), a lógica aplica o comando de Set (S) na saída ld_verde, acendendo o "led_verde" (%Q0.0), e força o Reset (R) preventivo do "led_amarelo" (%Q0.1) e do "led_vermelho" (%Q0.2).</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 4 (transição para o vermelho)</h3>
+                <br>
+                <p>Estando proc_ativo e ld_verde em nível alto, o temporizador #T1 (TON) inicia a contagem de 7 segundos (T#7s). Ao atingir o tempo, a saída Q de #T1 atua Resetando a saída ld_verde (%Q0.0), Setando o "led_vermelho" (%Q0.2) via ld_vermelho e mantendo o Reset no ld_amarelo (%Q0.1).</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 5 (transição para o amarelo)</h3>
+                <br>
+                <p>Com proc_ativo e ld_vermelho ativos, o temporizador #T2 (TON) inicia a contagem de 9 segundos (T#9s). Concluído o tempo, a saída Q de #T2 aplica o Reset no ld_verde e no ld_vermelho, e aciona a bobina de Set (S) na saída ld_amarelo, acendendo o "led_amarelo" (%Q0.1).</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Network 6 (fim da sequência)</h3>
+                <br>
+                <p>Com proc_ativo e ld_amarelo ativos, o temporizador #T3 (TON) realiza a contagem final de 2 segundos (T#2s). Ao estourar o tempo programado, a saída Q de #T3 dispara o comando de Reset geral em todas as lâmpadas da sinaleira.</p>
+                <br>
+            </div>
+            <br><br>
+            
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Loop</h3>
+                <br>
+                <p>O ciclo contínuo (loop) do semáforo ocorre pela interação entre a Network 6 e a Network 3 do FB1. Quando o temporizador #T3 conclui sua contagem de 2 segundos na Network 6, a variável de saída #T3.Q abre momentaneamente o seu contato NF localizado na Network 3.</p>
+                <br>
+                <p>Essa abertura rápida corta o sinal elétrico e desativa a contagem dos temporizadores. Ao desativar o #T3, o contato NF na Network 3 volta a fechar instantaneamente. Como a memória proc_ativo ("processo_ativo" %M10.0) permanece ativada, a energia volta a fluir pela Network 3, disparando novamente o Set do ld_verde ("led_verde" %Q0.0) e reiniciando todo o ciclo sequencial de forma automática.</p>
+                <br>
+            </div>
+            <br>
+
+            <div class="fundo_geral_02">
+                <br>
+                <h3>Validação Exclusiva por Simulação (PLCSIM / TIA Portal)</h3>
+                <br>
+                <p>Embora toda a chamada no OB1 e o mapeamento de I/O na CPU 1215C estejam prontos para gravação em um CLP físico, a validação do projeto ocorreu 100% em ambiente simulado. Os testes foram realizados alterando os estados lógicos na tabela de simulação (SimTable) do PLCSIM, comutando <strong>"botao_liga" (%I0.1)</strong> para TRUE para iniciar a execução da instância FB1 chamada no OB1.</p>
+                <br>
+                <p>No ambiente virtual, o ciclo temporizado foi monitorado visualmente pelas tags acionadas no OB1: 7 segundos no <strong>"led_verde" (%Q0.0)</strong>, 9 segundos no <strong>"led_vermelho" (%Q0.2)</strong> e 2 segundos no <strong>"led_amarelo" (%Q0.1)</strong>, reiniciando o ciclo continuamente.</p>
+                <br>
+                <p>Para interromper a simulação, a variável <strong>"botao_desliga" (%I0.0)</strong> foi alterada para TRUE na SimTable. A chamada no OB1 executa a Network 2 do bloco de função, enviando o comando de Reset que desativa a memória "processo_ativo" (%M10.0) e desliga todas as saídas simuladas de forma instantânea.</p>
+                <br>
+            </div>
+            <br>
         </div>
         <br><br>
         <hr>
